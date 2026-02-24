@@ -1,73 +1,81 @@
-/* ===========================
+/* =====================================================
    VARIABLES COULEURS & DIMENSIONS
-=========================== */
+===================================================== */
 :root {
-   /* COULEURS PRINCIPALES */
-   --accent: #ff5722;                /* Couleur principale / boutons / accents */
-   --bg-page: #1a1d23;               /* Fond global */
-   --bg-surface: #2e3440;            /* Surfaces type sidebar, cartes */
-   --bg-card: #242933;               /* Cartes personnalisées */
-   --bot-bg: #3d2b26;                /* Fond bot conseils */
-   --progress-bg: #6e6e6e;           /* Barre de progression */
-   --btn-dark-bg: #2c2c2c;           /* Boutons sombre */
-   --btn-red-bg: #5e0000;            /* Boutons rouges */
-   
-   --text-primary: #ffffff;          /* Texte principal */
-   --text-muted: #aab2c0;            /* Texte secondaire / footer */
-   
-   /* RADIUS */
-   --radius-md: 0.5rem; /* ~8px */
-   --radius-lg: 0.75rem; /* ~12px */
 
-   /* CONTENU & GRIDS */
-   --content-max-width: 75rem;     /* 1200px */
-   --grid-max-width: 90%;
-   
-   /* EFFETS */
-   --blur-soft: blur(0.3rem);  /* ~5px */
-   --blur-strong: blur(0.4rem);  /* ~6px */
-   
-   /* CURSEURS */
-   --cursor-default: url('../assets/curseur.png') 7 0, pointer;
-   --cursor-click: url('../assets/curseur-clic.png') 7 0, pointer;
-   
-  /* SPACING PRINCIPAL */
-   --space-xs: 0.4rem;  /* ~6px */
-   --space-sm: 0.6rem;  /* ~9px */
-   --space-md: 0.9rem;  /* ~14px */
-   --space-lg: 1.2rem;  /* ~19px */
-   --space-xl: 1.5rem;  /* ~24px */
+  /* ===== COULEURS ===== */
+  --accent: #ff5722;
+  --bg-page: #1a1d23;
+  --bg-surface: #2e3440;
+  --bg-card: #242933;
+  --bot-bg: #3d2b26;
+  --progress-bg: #6e6e6e;
+  --btn-dark-bg: #2c2c2c;
+  --btn-red-bg: #5e0000;
 
-   /* TRANSITIONS */
-   --transition: 0.2s ease;
+  --text-primary: #ffffff;
+  --text-muted: #aab2c0;
+
+  /* ===== RADIUS ===== */
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+
+  /* ===== LAYOUT ===== */
+  --content-max-width: 75rem;
+  --grid-max-width: 90%;
+  --sidebar-margin: 14.5em;
+  --scrollbar-width: 0.7em;
+
+  /* ===== SPACING ===== */
+  --space-xs: 0.4rem;
+  --space-sm: 0.6rem;
+  --space-md: 0.9rem;
+  --space-lg: 1.2rem;
+  --space-xl: 1.5rem;
+
+  /* ===== EFFETS ===== */
+  --blur-soft: blur(0.3rem);
+  --blur-strong: blur(0.4rem);
+
+  /* ===== TRANSITIONS ===== */
+  --transition: 0.2s ease;
+
+  /* ===== CURSEURS ===== */
+  --cursor-default: url('../assets/curseur.png') 7 0, pointer;
+  --cursor-click: url('../assets/curseur-clic.png') 7 0, pointer;
 }
 
-/* ===========================
-   GLOBAL
-=========================== */
-/* Reset box-sizing et scroll smooth */
+
+/* =====================================================
+   RESET GLOBAL
+===================================================== */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5.375em; /* si header fixe */
+  scroll-padding-top: 5.375em;
 }
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem; /* ~14.4px */
+  font-size: 0.9rem;
   line-height: 1.45rem;
   color: var(--text-primary);
+  background-color: var(--bg-page);
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
 
-/* Scrollbar propre */
+
+/* =====================================================
+   SCROLLBAR CUSTOM
+===================================================== */
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(255,255,255,0.5) transparent;
@@ -84,437 +92,208 @@ body {
 *::-webkit-scrollbar-thumb {
   background: rgba(143,143,143,0.4);
   border-radius: 1rem;
+  transition: var(--transition);
 }
 
 *::-webkit-scrollbar-thumb:hover {
   background: rgba(240,240,240,0.7);
-  transform: scale(1.1); /* optionnel */
-}
-
-a {
-  color: rgb(101, 206, 253);
-  text-decoration: none;
-}
-
-.theme {
-  background: rgb(32, 32, 32);
-  color: white;
-  font-family: arial, helvetica, sans-serif;
 }
 
 
-/* ===========================
-   GENERIC HEADINGS
-=========================== */
-h1 {
+/* =====================================================
+   TYPOGRAPHIE
+===================================================== */
+h1, h2, h3 {
   font-weight: 600;
+  margin-top: 0;
+}
+
+h1 {
   font-size: 2.5rem;
   line-height: 3.25rem;
 }
 
 h2 {
-  font-weight: 600;
   font-size: 2rem;
   line-height: 1.2em;
 }
 
 h3 {
-  font-weight: 600;
   font-size: 1.5rem;
   line-height: 1.25em;
 }
 
-/* ===========================
-   SPLIT LAYOUT GLOBAL
-=========================== */
-.split-layout {
+p {
+  margin: 0 0 var(--space-md);
+  color: var(--text-primary);
+}
+
+
+/* =====================================================
+   LIENS
+===================================================== */
+a {
+  color: rgb(101, 206, 253);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: hsl(199, 83%, 45%);
+}
+
+
+/* =====================================================
+   BOUTONS & INPUTS
+===================================================== */
+input,
+button,
+textarea {
+  font-family: inherit;
+  color: var(--text-primary);
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) var(--space-md);
+  transition: background var(--transition),
+              border-color var(--transition),
+              color var(--transition);
+}
+
+input:hover,
+button:hover {
+  background-color: rgba(255,255,255,0.09);
+}
+
+input:active,
+button:active {
+  background-color: rgba(255,255,255,0.03);
+  border-color: rgba(255,255,255,0.07);
+}
+
+button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+textarea {
+  resize: none;
+}
+
+
+/* =====================================================
+   LAYOUT STRUCTURE
+===================================================== */
+.container {
   display: flex;
-  flex-direction: column;
-  width: 100%;
   min-height: 100vh;
 }
 
-/* ===========================
-   MAIN SECTION
-=========================== */
-.main-section {
-   flex: 0 0 60vh;
-   min-height: 60vh;
-   position: relative;
-   
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   gap: var(--space-xl);
-
-   padding: 2.5rem 1.25rem;
-   text-align: center;
-
-   backdrop-filter: saturate(100%) blur(0.5rem);
-   -webkit-backdrop-filter: saturate(100%) blur(0.5rem);
-   transition: backdrop-filter 0.5s linear, -webkit-backdrop-filter 0.5s linear;
-   
-   user-select: none;
-   font-size: 2rem;
-   text-decoration: none; 
-}
-
-.title-container {
-  position: relative;
+.content {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  max-width: var(--content-max-width);
+  width: 100%;
+  margin: 70px auto 0;
+  padding: 2em;
 }
 
-/* ===========================
-   TITRE
-=========================== */
-.title-container h1 {
-  margin: 0 0 1.25rem 0;
-  font-size: 3rem;
-  word-wrap: break-word;
+footer {
   text-align: center;
+  padding: var(--space-sm);
+  margin-top: var(--space-lg);
+  background-color: rgba(255,255,255,0.05);
+  color: var(--text-muted);
+}
+
+
+/* =====================================================
+   UTILITAIRES
+===================================================== */
+.flex {
   display: flex;
-  justify-content: center;
-  letter-spacing: 0.05rem;
-  padding: 1.5rem;
-  text-shadow:
-    0 0 1.25rem rgba(0,0,0,1),
-    0 0 0.625rem rgba(255,255,255,0.2);
-  animation: fastFade 0.8s ease-in-out 0.6s both;
 }
 
-/* ===========================
-   ROBOT
-=========================== */
-.assistant {
-   width: 37.5rem;
-   max-width: 80vw;
-   height: auto;
-   object-fit: contain;
-   z-index: 1;
-   pointer-events: none;
-   animation: slideUpFade 1s ease-out forwards;
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* ===========================
-   TIP BUBBLE
-=========================== */
-.tip-bubble {
-   position: relative;
-   background: rgba(0, 0, 0, 0.7);
-   backdrop-filter: blur(0.625rem);
-   border: 0.0625rem solid var(--accent);
-   border-radius: var(--radius-md);
-   padding: var(--space-md);
-   max-width: 18.75rem;
-   margin-left: 11.25rem;
-   margin-bottom: 0;
-   text-shadow: 0 0.0625rem 0.25rem black;
-   animation: slideUpFade 0.8s ease-out 0.5s both;
+.mirror {
+  transform: rotate(180deg);
 }
 
-.tip-bubble::after {
-   content: '';
-   position: absolute;
-   bottom: -0.625rem;
-   left: 50%;
-   transform: translateX(-50%);
-   border-left: 0.625rem solid transparent;
-   border-right: 0.625rem solid transparent;
-   border-top: 0.625rem solid var(--accent);
+.width-90 { max-width: 90%; }
+.width-70 { max-width: 70%; }
+.width-60 { max-width: 60%; }
+.width-40 { max-width: 40%; }
+
+.selected {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.12);
 }
 
-.tip-bubble p {
-   font-size: 0.95rem;
-   margin: 0;
-   font-style: italic;
+.section {
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
-/* ===========================
-   BUTTONS
-=========================== */
-.button-container {
-   display: flex;
-   gap: 4rem;
-   flex-direction: row;
+.section.fade-in {
+  opacity: 1;
 }
 
-.button-wrapper {
-   text-align: center;
-}
 
-.maincontent .btn-primary,
-.maincontent .btn-secondary {
-   width: 18.75rem; /* 300px */
-   height: 4.5rem;  /* 72px */
-   padding: 0.625rem;
-   
-   border-radius: var(--radius-md);
-   font-weight: 800;
-   font-size: 1.8rem;
-   
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   text-shadow: none;
-   
-   transition: all 0.3s ease-in-out;
-   box-shadow: 0.1em 0.1em 0.6em rgba(0, 0, 0, 0.6);
-}
-
-.btn-primary {
-   background: var(--btn-dark-bg);
-   border: 0.125rem solid rgba(255,87,34,0.5);
-}
-
-.btn-primary:hover {
-   border-color: var(--accent);
-   box-shadow: 0 0 1.5625rem 0.125rem rgba(255,87,34,0.7);
-   transform: scale(1.03);
-}
-
-.btn-secondary {
-   background: var(--btn-red-bg);
-   border: 0.125rem solid rgba(255,0,0,0.5);
-}
-
-.btn-secondary:hover {
-   border-color: #ff0000;
-   box-shadow: 0 0 1.5625rem 0.125rem rgba(255,0,0,0.7);
-   transform: scale(1.03);
-}
-
-/* ===========================
-   GAME GRID
-=========================== */
-.games-section {
-   flex: 0 0 40vh;
-   min-height: 40vh;
-   
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   
-   border-top: 0.0625rem solid var(--accent);
-   backdrop-filter: blur(1.25rem); /* 20px */
-   background: rgba(0,0,0,0.6);
-   box-shadow: 0 -0.625rem 2.5rem rgba(0,0,0,0.6) inset;
-   
-   overflow-y: auto;
-}
-
-.games-grid {
-   display: grid;
-   grid-template-columns: repeat(5, 12.5rem); /* 200px min */
-   gap: var(--space-md);
-   
-   max-width: var(--content-max-width); /* 75rem / 1200px */
-   width: var(--grid-max-width);
-   margin: 1.25rem auto 0 auto; /* 20px top */
-}
-
-/* ===========================
-   GAME CARD
-=========================== */
-.game-card {
-   height: 10rem; /* 160px */
-   position: relative;
-   border-radius: var(--radius-md);
-   overflow: hidden;
-   border: 0.1875rem solid var(--accent); /* 3px */
-   text-decoration: none;
-   
-   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-               box-shadow 0.3s ease,
-               border-color 0.3s ease;
-}
-
-.game-card-bg {
-   width: 100%;
-   height: 100%;
-   background-size: cover;
-   background-position: center;
-   filter: var(--blur-soft) brightness(0.7);
-   transition: filter 0.25s ease;
-}
-
-.game-card:hover .game-card-bg {
-   filter: blur(0) brightness(1.4);
-}
-
-.game-card:hover {
-   transform: scale(1.02);
-   box-shadow: 0 0 1.25rem rgba(255,87,34,0.6); /* 20px */
-   border-color: var(--accent);
-}
-
-/* ===========================
-   TEXTE SUR CARTE
-=========================== */
-.game-card h2 {
-   position: absolute;
-   inset: 0;
-   
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   
-   font-size: 1.5rem;
-   font-weight: 900;
-   margin: 0;
-   
-   text-shadow: 0.125rem 0.125rem 0.625rem rgba(0,0,0,1); /* 2px 2px 10px */
-   background: rgba(0,0,0,0.3);
-}
-
-/* ===========================
-   OVERLAY GRADIENT
-=========================== */
-.game-card::after {
-   content: "";
-   position: absolute;
-   inset: 0;
-   background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
-}
-
-/* ===========================
-   ACTIVE GAME CARD
-=========================== */
-.game-card.active {
-   transform: translateY(-1.25rem) translateZ(0); /* 20px */
-   box-shadow: 0 0.625rem 1.875rem rgba(255,87,34,0.4); /* 10px 30px */
-   border-color: #ffffff;
-   z-index: 10;
-}
-
-.game-card.active .game-card-bg {
-   filter: blur(0) brightness(1.4);
-}
-
-.game-card.active:hover {
-    transform: translateY(-1.25rem) scale(1.02) translateZ(0);
-}
-
-/* ===========================
-   QUICK MENU
-=========================== */
-.quick-menu {
-   position: fixed;
-   top: 1rem;
-   left: 1rem;
-   z-index: 999;
-}
-
-.menu-toggle {
-   padding: 0.5rem 1rem;
-   background-color: var(--bg-surface);
-   color: var(--accent);
-   border: none;
-   border-radius: var(--radius-md);
-   font-weight: 600;
-}
-
-.menu-toggle:hover {
-   background-color: #3d3f4a;
-}
-
-.menu-items {
-   display: none;
-   margin-top: 0.5rem;
-   background-color: var(--bg-surface);
-   border-radius: var(--radius-md);
-   overflow: hidden;
-}
-
-.menu-items .menu-link {
-   display: block;
-   padding: 0.5rem 1rem;
-   text-decoration: none;
-   color: var(--text-primary);
-   border-bottom: 1px solid rgba(255,255,255,0.1);
-}
-
-.menu-items .menu-link.active {
-   background-color: var(--accent);
-   color: #000000;
-}
-
-/* ===========================
-   ANIMATIONS HUB ORIGINALES
-=========================== */
-
-@keyframes fastFade {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideUpFade {
-  from { opacity: 0; transform: translateY(1.25rem); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideUpSync {
-  0% {
-    transform: translateY(3.75rem) translateZ(0);
-    opacity: 0;
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+@keyframes rotate {
+  50% {
+    transform: translateY(-6px) rotateZ(180deg);
   }
   100% {
-    transform: translateY(0) translateZ(0);
-    opacity: 1;
+    transform: translateY(0) rotateZ(360deg);
   }
 }
 
-/* ===========================
-   MEDIA QUERIES
-=========================== */
-@media only screen and (max-width: 56.25rem) { /* 900px */
-    .title-container h1.title {
-        font-size: 1.5rem;
-    }
-
-    .button-container {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .button-wrapper a.btn-primary,
-    .button-wrapper a.btn-secondary {
-        width: 15rem;
-        height: 3.75rem;
-        font-size: 1.3rem;
-    }
-
-    .games-grid {
-        grid-template-columns: repeat(auto-fit, minmax(8.75rem, 1fr)); /* 140px */
-    }
+@keyframes slide-down {
+  from { max-height: 0; }
+  to { max-height: 5000px; }
 }
 
-@media only screen and (max-width: 29.375rem) { /* 470px */
-    .games-grid {
-        grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); /* 120px */
-    }
-
-    .button-wrapper a.btn-primary,
-    .button-wrapper a.btn-secondary {
-        width: 100%;
-    }
-
-    .tip-bubble {
-        font-size: 0.9rem;
-    }
+@keyframes slide-up {
+  from { max-height: 1000px; }
+  to { max-height: 0; }
 }
 
-@media only screen and (max-width: 56.25rem) { /* 900px */
-    .games-grid {
-        grid-template-columns: repeat(auto-fit, minmax(11.25rem, 1fr)); /* 180px */
-    }
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 900px) {
+  .content {
+    padding: 1em;
+  }
 }
 
-@media only screen and (max-width: 29.375rem) { /* 470px */
-    .games-grid {
-        grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); /* 120px */
-    }
+@media (max-width: 700px) {
+  .width-90 { max-width: 100%; }
+  .width-70 { max-width: 90%; }
+  .width-60 { max-width: 80%; }
+  .width-40 { max-width: 70%; }
+}
+
+@media (max-width: 470px) {
+  .container {
+    overflow-x: hidden;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0.5em;
+  }
+
+  textarea {
+    max-width: 95%;
+  }
 }
