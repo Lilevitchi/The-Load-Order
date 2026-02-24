@@ -82,7 +82,6 @@ body {
 =========================== */
 .tip-bubble {
    position: absolute;
-   top: -4rem;
    left: 50%; 
    transform: translateX(-50%);
   
@@ -312,6 +311,12 @@ body {
    background-color: var(--bg-surface);
    border-radius: var(--radius-md);
    overflow: hidden;
+   transition: opacity 0.2s ease;
+}
+
+.menu-items.open {
+    display: block;
+    opacity: 1;
 }
 
 .menu-items .menu-link {
