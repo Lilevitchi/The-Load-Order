@@ -3,8 +3,15 @@
 =========================== */
 :root {
    /* COULEURS PRINCIPALES */
+   --primary-color: #ff5722;         /* Couleur principale */
+   --secondary-color: #661010;       /* Couleur secondaire */
+   --accent-green: #00ea3c;
+   --bg-page: #1a1d23;               /* Fond global */
+   --bg-dark: #0f1115;
+   --text-white: #ffffff;            /* Texte principal */
+   --transition-speed: 187ms;
+   
    --accent: #ff5722;                /* Couleur principale / boutons / accents */
-   --accent-soft: rgba(255, 87, 34, 0.08); /* Hover léger / surfaces */
    --bg-page: #1a1d23;               /* Fond global */
    --bg-surface: #2e3440;            /* Surfaces type sidebar, cartes */
    --bg-card: #242933;               /* Cartes personnalisées */
@@ -43,30 +50,24 @@
    GLOBAL
 =========================== */
 * {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.63) transparent;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   transition: all var(--transition-speed) cubic-bezier(0, 0, 0, 1);
+   scrollbar-width: thin;
+   scrollbar-color: rgba(255, 255, 255, 0.63) transparent;
 }
 
-*::-webkit-scrollbar {
-  width: 12px;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
+/* Scrollbar Custom (mélange rem/px pour la précision système) */
+*::-webkit-scrollbar { width: 0.625rem; }
+*::-webkit-scrollbar-track { background: transparent; }
 *::-webkit-scrollbar-thumb {
-  background-color: rgba(143, 143, 143, 0.63);
-  border-radius: 20px;
+   background-color: rgba(143, 143, 143, 0.4);
+   border-radius: 1rem;
 }
-
 *::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(240, 240, 240, 0.63);
-  border-radius: 20px;
-  scale: 10%;
+   background-color: rgba(240, 240, 240, 0.63);
+   border-radius: 20px;
+   scale: 10%;
 }
 
 html {
@@ -78,10 +79,13 @@ div {
 }
 
 body {
-  margin: 0;
-  font-size: 0.9em;
-  font-weight: 400;
-  line-height: 1.45em;
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 0.9rem; /* ~14.4px */
+   line-height: 1.45rem;
+   font-weight: 400;
+   color: var(--text-white);
+   background-color: var(--bg-page) !important;
 }
 
 h1 {
@@ -112,11 +116,11 @@ body.theme {
     background-size: cover;
     background-position: center;
     background-color: var(--bg-page) !important;
-    color: var(--text-primary);
-    font-family: arial, helvetica, sans-serif;
+    color: var(--text-white);
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 0.9rem; /* ~14.4px */
+    line-height: 1.45rem;
 }
 
 /* ===========================
@@ -150,38 +154,36 @@ body.theme {
 }
 
 .title-container {
-    position: relative;
-    text-align: center;
+   position: relative;
+   text-align: center;
 }
 
-.title-container h1.title {
-  margin: 2em 0 20px;
+.title-container h1 {
+  margin: 1.5rem 0 1.25rem;
   position: relative;
   color: #ffffff;
-  font-size: 1.5em;
+  font-size: 3.5rem;
   word-wrap: break-word;
   text-align: center;
   display: flex;
   justify-content: center;
-  letter-spacing: 0.05em;
-  padding: 0.5em;
-
+  letter-spacing: 0.05rem;
+  padding: 1.5rem;
   text-shadow:
     0 0 1.25rem rgba(0,0,0,1),
     0 0 0.625rem rgba(255,255,255,0.2);
-
   animation: fastFade 0.8s ease-in-out 0.6s both;
 }
 
 .assistant {
-     position: absolute;
-  top: -100px;
-  left: 50%;
-  transform: translateX(-50%);
-  max-height: 300px;
-  z-index: -1;
-  pointer-events: none;
-     animation: slideUpFade 1s ease-out forwards;
+   position: absolute;
+   top: -7.5rem; /* ~120px */
+   left: 50%;
+   transform: translateX(-50%);
+   max-height: 15.6rem; /* ~250px */
+   z-index: -1;
+   pointer-events: none;
+   animation: slideUpFade 1s ease-out forwards;
 }
 
 /* ===========================
