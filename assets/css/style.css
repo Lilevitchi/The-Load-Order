@@ -45,7 +45,6 @@
   --cursor-click: url('../assets/curseur-clic.png') 7 0, pointer;
 }
 
-
 /* =====================================================
    RESET GLOBAL
 ===================================================== */
@@ -63,15 +62,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
   line-height: 1.45rem;
-  color: var(--text-primary);
-  background-color: var(--bg-page);
-
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  font-weight: 400;
 }
-
 
 /* =====================================================
    SCROLLBAR CUSTOM
@@ -98,7 +90,6 @@ body {
 *::-webkit-scrollbar-thumb:hover {
   background: rgba(240,240,240,0.7);
 }
-
 
 /* =====================================================
    TYPOGRAPHIE
@@ -128,7 +119,6 @@ p {
   color: var(--text-primary);
 }
 
-
 /* =====================================================
    LIENS
 ===================================================== */
@@ -141,7 +131,6 @@ a {
 a:hover {
   color: hsl(199, 83%, 45%);
 }
-
 
 /* =====================================================
    BOUTONS & INPUTS
@@ -180,7 +169,6 @@ textarea {
   resize: none;
 }
 
-
 /* =====================================================
    LAYOUT STRUCTURE
 ===================================================== */
@@ -206,7 +194,6 @@ footer {
   background-color: rgba(255,255,255,0.05);
   color: var(--text-muted);
 }
-
 
 /* =====================================================
    UTILITAIRES
@@ -243,7 +230,6 @@ footer {
   opacity: 1;
 }
 
-
 /* =====================================================
    ANIMATIONS
 ===================================================== */
@@ -265,7 +251,6 @@ footer {
   from { max-height: 1000px; }
   to { max-height: 0; }
 }
-
 
 /* =====================================================
    RESPONSIVE
