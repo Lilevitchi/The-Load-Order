@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/images/favicon.png">
+  
   <title>The Load Order</title>
+
+  <!-- Mots-clés SEO -->
+  <meta name="keywords" content="
+    The Load Order, Mod, Modding Guide, Guide, Mods, Modding, Mod Guide, Astuces, Tutoriel, Resources, Resource, Tips, Walkthrough,
+    Fallout 4, Fallout, FO4, Fallout New Vegas, Fallout NV, FNV, New Vegas, Tale of Two Wastelands, TTW, Skyrim Special Edition, SSE, Skyrim SE, Cyberpunk 2077,
+    The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS, Nexus,
+    Nexus Mods, NexusMods, Vortex, Mod Organizer 2, MO2, Installer, Mod Manager,
+    Performance, Stabilité, Optimisation, Fix, Fixes, FPS, Fast, Easy, Beginner">
+  
+  <!-- Description SEO -->
+  <meta name="description" content="The Load Order : Guides de modding complet, avec astuces et ressources pour de nombreux jeux dont Fallout 4, Fallout New Vegas, Tale of Two Wastelands, Fallout London et Cyberpunk 2077.">
+  <meta http-equiv="content-language" content="fr">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Open Graph / Réseaux sociaux -->
+  <meta property="og:site_name" content="The Load Order">
+  <meta property="og:title" content="The Load Order">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theloadorder.example.com/"> <!-- mettre ton URL finale -->
+  <meta property="og:image" content="assets/images/og-card.webp">
+  <meta property="og:description" content="Guides modding, avec astuces et ressources pour divers jeux.">
+
+  <!-- Couleur thème mobile / navigateur -->
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1115">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+
+  <!-- Empêche Dark Reader de modifier les couleurs -->
+  <meta name="darkreader-lock">
+
+  <!-- Javascript -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- CSS global et modules -->
   <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
 
-<div class="hub-wrapper">
+<!-- Hub principal -->
+<div class="hub">
 
-  <!-- Background -->
-  <div class="hub-bg" style="background-image:url('assets/images/Fond.png')"></div>
+  <!-- Background général -->
+  <div class="hub-background" style="background-image:url('assets/images/Fond.png')"></div>
 
-  <!-- Burger menu -->
-  <div class="hub-burger">
-    <button id="hubBurgerToggle">Choisir un jeu</button>
-    <div id="hubBurgerMenu" class="hub-burger-menu">
-      <a href="games/fallout4/" class="burger-item active-game">Fallout 4</a>
+  <!-- Menu burger / sélection rapide -->
+  <div class="hub-menu">
+    <button id="hubBurgerToggle" class="burger-toggle">Choisir un jeu</button>
+    <div id="hubBurgerMenu" class="burger-items">
+      <a href="games/fallout4/" class="burger-item active">Fallout 4</a>
       <a href="games/fallout-london/" class="burger-item">Fallout London</a>
       <a href="games/fnv/" class="burger-item">New Vegas</a>
       <a href="games/ttw/" class="burger-item">Tale of Two Wastelands</a>
@@ -25,31 +66,25 @@
     </div>
   </div>
 
-  <!-- Layout principal -->
-  <div class="split-layout">
+  <!-- Zone centrale / robot et messages -->
+  <div class="hub-main">
+    <div class="hub-central">
 
-    <!-- Zone centrale -->
-    <div class="display-zone">
-      <div class="hub-central-content">
-
-        <div class="bot-bubble">
-          <p id="lile-bot-tip">Chargement d'une astuce...</p>
-        </div>
-
-        <img src="assets/images/lile-bot.png" class="hub-bot" alt="Robot">
-
-        <div class="hub-overlay-content">
-          <div class="custom-hub-title">
-            Choisis ton univers
-          </div>
-          <div class="hub-buttons-gap"></div>
-        </div>
-
+      <!-- Bulle astuce / tips -->
+      <div class="bot-bubble">
+        <p id="hub-tip">Chargement d'une astuce...</p>
       </div>
+
+      <img src="assets/images/lile-bot.png" class="hub-bot" alt="Robot">
+
+      <div class="hub-overlay">
+        <h1 class="hub-title">Choisis ton univers</h1>
+      </div>
+
     </div>
 
-    <!-- Zone de sélection des jeux -->
-    <div class="selection-zone">
+    <!-- Sélection des jeux -->
+    <div class="hub-selection">
       <div class="game-grid">
         <a href="games/fallout4/" class="game-card">
           <div class="game-card-bg" style="background-image:url('assets/images/fo4.jpg')"></div>
@@ -67,7 +102,7 @@
           <div class="game-card-bg" style="background-image:url('assets/images/ttw.jpg')"></div>
           <h2>TTW</h2>
         </a>
-        <a href="games/cyberpunk/" class="game-card">
+        <a href="games/cyberpunk77/" class="game-card">
           <div class="game-card-bg" style="background-image:url('assets/images/cyberpunk.jpg')"></div>
           <h2>Cyberpunk 2077</h2>
         </a>
@@ -77,6 +112,5 @@
   </div>
 </div>
 
-<script src="assets/js/main.js"></script>
 </body>
 </html>
