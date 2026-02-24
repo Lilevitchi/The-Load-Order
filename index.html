@@ -1,16 +1,82 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Mon Site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Load Order</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-    <h1>Bienvenue sur mon site</h1>
-    <p>Mon site sans MkDocs ni Material.</p>
+<div class="hub-wrapper">
 
-    <script src="assets/js/main.js"></script>
+  <!-- Background -->
+  <div class="hub-bg" style="background-image:url('assets/images/Fond.png')"></div>
+
+  <!-- Burger menu -->
+  <div class="hub-burger">
+    <button id="hubBurgerToggle">Choisir un jeu</button>
+    <div id="hubBurgerMenu" class="hub-burger-menu">
+      <a href="games/fallout4/" class="burger-item active-game">Fallout 4</a>
+      <a href="games/fallout-london/" class="burger-item">Fallout London</a>
+      <a href="games/fnv/" class="burger-item">New Vegas</a>
+      <a href="games/ttw/" class="burger-item">Tale of Two Wastelands</a>
+      <a href="games/cyberpunk77/" class="burger-item">Cyberpunk 2077</a>
+    </div>
+  </div>
+
+  <!-- Layout principal -->
+  <div class="split-layout">
+
+    <!-- Zone centrale -->
+    <div class="display-zone">
+      <div class="hub-central-content">
+
+        <div class="bot-bubble">
+          <p id="lile-bot-tip">Chargement d'une astuce...</p>
+        </div>
+
+        <img src="assets/images/lile-bot.png" class="hub-bot" alt="Robot">
+
+        <div class="hub-overlay-content">
+          <div class="custom-hub-title">
+            Choisis ton univers
+          </div>
+          <div class="hub-buttons-gap"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Zone de sélection des jeux -->
+    <div class="selection-zone">
+      <div class="game-grid">
+        <a href="games/fallout4/" class="game-card">
+          <div class="game-card-bg" style="background-image:url('assets/images/fo4.jpg')"></div>
+          <h2>Fallout 4</h2>
+        </a>
+        <a href="games/fallout-london/" class="game-card">
+          <div class="game-card-bg" style="background-image:url('assets/images/london.jpg')"></div>
+          <h2>Fallout London</h2>
+        </a>
+        <a href="games/fnv/" class="game-card">
+          <div class="game-card-bg" style="background-image:url('assets/images/newvegas.jpg')"></div>
+          <h2>New Vegas</h2>
+        </a>
+        <a href="games/ttw/" class="game-card">
+          <div class="game-card-bg" style="background-image:url('assets/images/ttw.jpg')"></div>
+          <h2>TTW</h2>
+        </a>
+        <a href="games/cyberpunk/" class="game-card">
+          <div class="game-card-bg" style="background-image:url('assets/images/cyberpunk.jpg')"></div>
+          <h2>Cyberpunk 2077</h2>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="assets/js/main.js"></script>
 </body>
 </html>
