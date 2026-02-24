@@ -1,6 +1,6 @@
 function initRobotTips() {
-    const tipElement = document.getElementById("tip-text");
-    if (!tipElement) return;
+    const tipElements = document.querySelectorAll(".tip-bubble p");
+    if (!tipElements.length) return;
 
     const url = window.location.href;
     let category = "general";
@@ -27,7 +27,11 @@ function initRobotTips() {
     };
 
     const tips = allTips[category] || allTips["general"];
-    tipElement.innerText = tips[Math.floor(Math.random() * tips.length)];
+    
+    // On choisit un tip aléatoire pour chaque tip-bubble
+    tipElements.forEach(tipEl => {
+        tipEl.innerText = tips[Math.floor(Math.random() * tips.length)];
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
