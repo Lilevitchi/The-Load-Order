@@ -41,29 +41,7 @@ function initBurgerMenu() {
     });
 }
 
-function positionTipAboveRobot() {
-    const tip = document.querySelector(".tip-bubble");
-    const robot = document.querySelector(".assistant");
-
-    if (!tip || !robot) return;
-
-    // Positionner le tip juste au-dessus du robot
-    const robotRect = robot.getBoundingClientRect();
-    const containerRect = robot.parentElement.getBoundingClientRect();
-
-    const top = robotRect.top - containerRect.top - tip.offsetHeight - 0.5 * robotRect.height;
-
-    tip.style.position = "absolute";
-    tip.style.top = `${top}px`;
-    tip.style.left = "50%";
-    tip.style.transform = "translateX(-50%)";
-}
-
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function() {
     initRobotTips();
     initBurgerMenu();
-    positionTipAboveRobot();
-
-    // Repositionne le tip si la fenêtre change de taille
-    window.addEventListener("resize", positionTipAboveRobot);
 });
