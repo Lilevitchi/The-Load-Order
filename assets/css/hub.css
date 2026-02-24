@@ -67,7 +67,7 @@ body {
    ROBOT
 =========================== */
 .assistant {
-  position: relative;
+  position: absolute;
   width: 37.5rem;
   top: -6.25rem;
   left: 50%;
@@ -179,7 +179,6 @@ body {
    justify-content: center;
    align-items: center;
    user-select: none;
-    color: var(--text-primary);
    
    border-top: 0.0625rem solid var(--accent);
    backdrop-filter: blur(1.25rem);
@@ -245,6 +244,7 @@ body {
    align-items: center;
    justify-content: center;
    text-align: center;
+   color: var(--text-primary);
    
    font-size: 1.5rem;
    font-weight: 900;
@@ -271,6 +271,7 @@ body {
    transform: translateY(-1.25rem) translateZ(0);
    box-shadow: 0 0.625rem 1.875rem rgba(255,87,34,0.4);
    border-color: #ffffff;
+   color: var(--text-primary);
    z-index: 10;
 }
 
