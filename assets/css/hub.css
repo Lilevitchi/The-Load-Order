@@ -190,7 +190,7 @@ body {
 
 .games-grid {
    display: grid;
-   grid-template-columns: repeat(5, 10rem);
+   grid-template-columns: repeat(5, 12.5rem);
    gap: var(--space-md);
    
    max-width: 65rem;
