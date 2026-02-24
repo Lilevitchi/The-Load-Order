@@ -49,7 +49,6 @@ body {
 .title-container h1 {
   margin: 6rem 0 1.25rem;
   position: relative;
-  max-width: 90%;
   color: var(--text-primary);
   font-size: 3rem;
   word-wrap: break-word;
