@@ -68,14 +68,13 @@ body {
    ROBOT
 =========================== */
 .assistant {
-   position: absolute;
-   width: 37.5rem;
-   max-width: 80vw;
-   height: auto;
-   object-fit: contain;
-   z-index: 1;
-   pointer-events: none;
-   animation: slideUpFade 1s ease-out forwards;
+  position: absolute;
+  top: -6.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 18.75rem;
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* ===========================
