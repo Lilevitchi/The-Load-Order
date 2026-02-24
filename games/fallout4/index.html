@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/img/favicon.png">
+  
+  <title>The Load Order | Fallout 4</title>
 
+  <!-- Mots-clés SEO -->
+  <meta name="keywords" content="
+    The Load Order, Mod, Modding Guide, Guide, Mods, Modding, Mod Guide, Astuces, Tutoriel, Resources, Resource, Tips, Walkthrough,
+    Fallout 4, Fallout, FO4, Fallout New Vegas, Fallout NV, FNV, New Vegas, Tale of Two Wastelands, TTW, Skyrim Special Edition, SSE, Skyrim SE, Cyberpunk 2077,
+    The Elder Scrolls, Bethesda, Bethesda Game Studios, BGS, Nexus,
+    Nexus Mods, NexusMods, Vortex, Mod Organizer 2, MO2, Installer, Mod Manager,
+    Performance, Stabilité, Optimisation, Fix, Fixes, FPS, Fast, Easy, Beginner">
+  
+  <!-- Description SEO -->
+  <meta name="description" content="Le guide de modding complet pour Fallout 4, avec astuces et ressources pour un jeu beau et optimisé.">
+  <meta http-equiv="content-language" content="fr">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Open Graph / Réseaux sociaux -->
+  <meta property="og:site_name" content="The Load Order">
+  <meta property="og:title" content="The Load Order">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://theloadorder.example.com/"> <!-- mettre URL finale -->
+  <meta property="og:image" content="assets/img/og-card.webp">
+  <meta property="og:description" content="Guides modding, avec astuces et ressources pour divers jeux.">
+
+  <!-- Couleur thème mobile / navigateur -->
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1115">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+
+  <!-- Empêche Dark Reader de modifier les couleurs -->
+  <meta name="darkreader-lock">
+
+  <!-- Javascript -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- CSS global et modules -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class="theme">
+
+  <!-- Background spécifique Fallout 4 -->
+  <style>
+    body.fallout4-page {
+      background-image: url('assets/img/fo4.jpg') !important;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+
+  <!-- Menu burger -->
+  <div class="quick-menu">
+    <button id="menuToggle" class="menu-toggle">Choisir un jeu</button>
+    <div id="menuItems" class="menu-items">
+      <a href="../fallout4/" class="menu-link active">Fallout 4</a>
+      <a href="../fallout-london/" class="menu-link">Fallout London</a>
+      <a href="../fnv/" class="menu-link">New Vegas</a>
+      <a href="../ttw/" class="menu-link">Tale of Two Wastelands</a>
+      <a href="../cyberpunk77/" class="menu-link">Cyberpunk 2077</a>
+    </div>
+  </div>
+
+  <!-- SECTION HAUTE -->
+  <section class="hero-section">
+
+    <div class="hero-container">
+
+      <!-- Bulle astuce -->
+      <div class="tip-bubble">
+        <p id="tip-text">Chargement d'une astuce...</p>
+      </div>
+
+      <!-- Robot -->
+      <img src="assets/img/lile-bot-fo4.png"
+           class="assistant-image"
+           alt="Assistant Fallout 4">
+
+      <!-- Titre + boutons -->
+      <div class="hero-overlay">
+        <h1 class="main-title">Bienvenue dans le Commonwealth</h1>
+
+        <div class="hero-buttons">
+          <a href="guide/" class="btn-primary">Guide écrit</a>
+          <a href="https://youtu.be/XXXX"
+             target="_blank"
+             class="btn-secondary">Guide vidéo</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SECTION BASSE -->
+  <section class="games-section">
+
+    <div class="games-grid">
+
+      <a href="../fallout4/" class="game-card active">
+        <div class="game-card-bg"
+             style="background-image:url('assets/img/fo4.jpg')"></div>
+        <h2>Fallout 4</h2>
+      </a>
+
+      <a href="../fallout-london/" class="game-card">
+        <div class="game-card-bg"
+             style="background-image:url('assets/img/london.jpg')"></div>
+        <h2>Fallout London</h2>
+      </a>
+
+      <a href="../fnv/" class="game-card">
+        <div class="game-card-bg"
+             style="background-image:url('assets/img/newvegas.jpg')"></div>
+        <h2>New Vegas</h2>
+      </a>
+
+      <a href="../ttw/" class="game-card">
+        <div class="game-card-bg"
+             style="background-image:url('assets/img/ttw.jpg')"></div>
+        <h2>TTW</h2>
+      </a>
+
+      <a href="../cyberpunk77/" class="game-card">
+        <div class="game-card-bg"
+             style="background-image:url('assets/img/cyberpunk.jpg')"></div>
+        <h2>Cyberpunk 2077</h2>
+      </a>
+
+    </div>
+
+  </section>
+
+</body>
