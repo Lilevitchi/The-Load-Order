@@ -91,6 +91,18 @@ body {
   transform: scale(1.1); /* optionnel */
 }
 
+a {
+  color: rgb(101, 206, 253);
+  text-decoration: none;
+}
+
+.theme {
+  background: rgb(32, 32, 32);
+  color: white;
+  font-family: arial, helvetica, sans-serif;
+}
+
+
 /* ===========================
    GENERIC HEADINGS
 =========================== */
