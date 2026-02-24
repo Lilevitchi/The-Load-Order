@@ -2,32 +2,43 @@
    VARIABLES COULEURS & DIMENSIONS
 =========================== */
 :root {
-    --accent: #ff5722;
-    --accent-soft: rgba(255,87,34,0.08);
-    --bg-page: #1a1d23;
-    --bg-surface: #2e3440;
-    --bg-card: #242933;
-    --bot-bg: #3d2b26;
-    --btn-dark-bg: #2c2c2c;
-    --btn-red-bg: #5e0000;
-    --text-primary: #ffffff;
-    --text-muted: #aab2c0;
-
-    /* Dimensions */
-    --radius-md: 0.5rem; /* ~8px */
-    --radius-lg: 0.75rem; /* ~12px */
-    --space-xs: 0.4rem;  /* ~6px */
-    --space-sm: 0.6rem;  /* ~9px */
-    --space-md: 0.9rem;  /* ~14px */
-    --space-lg: 1.2rem;  /* ~19px */
-    --space-xl: 1.5rem;  /* ~24px */
+   /* COULEURS PRINCIPALES */
+   --accent: #ff5722;                /* Couleur principale / boutons / accents */
+   --accent-soft: rgba(255, 87, 34, 0.08); /* Hover léger / surfaces */
+   --bg-page: #1a1d23;               /* Fond global */
+   --bg-surface: #2e3440;            /* Surfaces type sidebar, cartes */
+   --bg-card: #242933;               /* Cartes personnalisées */
+   --bot-bg: #3d2b26;                /* Fond bot conseils */
+   --progress-bg: #6e6e6e;           /* Barre de progression */
+   --btn-dark-bg: #2c2c2c;           /* Boutons sombre */
+   --btn-red-bg: #5e0000;            /* Boutons rouges */
+   --text-primary: #fff;             /* Texte principal */
+   --text-muted: #aab2c0;            /* Texte secondaire / footer */
+   
+   /* RADIUS */
+   --radius-md: 0.5rem; /* ~8px */
+   --radius-lg: 0.75rem; /* ~12px */
+   
+   /* EFFETS */
+   --blur-soft: blur(0.3rem);  /* ~5px */
+   --blur-strong: blur(0.4rem);  /* ~6px */
+   
+   /* CURSEURS */
+   --cursor-default: url('../assets/curseur.png') 7 0, pointer;
+   --cursor-click: url('../assets/curseur-clic.png') 7 0, pointer;
+   
+  /* SPACING PRINCIPAL */
+   --space-xs: 0.4rem;  /* ~6px */
+   --space-sm: 0.6rem;  /* ~9px */
+   --space-md: 0.9rem;  /* ~14px */
+   --space-lg: 1.2rem;  /* ~19px */
+   --space-xl: 1.5rem;  /* ~24px */
 }
 
 /* ===========================
    BACKGROUND
 =========================== */
 body.theme {
-    background-image: url('../../assets/img/fo4.jpg') !important;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
