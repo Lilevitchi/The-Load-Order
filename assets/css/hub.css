@@ -84,7 +84,7 @@ body {
    position: absolute;
    bottom: 100%;
    left: 50%; 
-   transform: translateX(-50%) translateY(-2rem);
+   transform: translateX(-50%) translateY(-10rem);
   
    background: rgba(0, 0, 0, 0.7);
    backdrop-filter: blur(0.625rem);
@@ -129,8 +129,8 @@ body {
 .main-section .btn-primary,
 .main-section .btn-secondary {
    color: var(--text-primary);
-   width: 18.75rem; /* 300px */
-   height: 4.5rem;  /* 72px */
+   width: 18.75rem;
+   height: 4.5rem;
    padding: 0.625rem;
    
    border-radius: var(--radius-md);
@@ -178,10 +178,11 @@ body {
    display: flex;
    justify-content: center;
    align-items: center;
+   user-select: none;
    
    border-top: 0.0625rem solid var(--accent);
-   backdrop-filter: blur(1.25rem); /* 20px */
-   background: rgba(0,0,0,0.6);
+   backdrop-filter: blur(1.25rem);
+   background: rgba(0,0,0,0.7);
    box-shadow: 0 -0.625rem 2.5rem rgba(0,0,0,0.6) inset;
    
    overflow-y: auto;
@@ -189,24 +190,25 @@ body {
 
 .games-grid {
    display: grid;
-   grid-template-columns: repeat(5, 12.5rem); /* 200px min */
+   grid-template-columns: repeat(5, 10rem);
    gap: var(--space-md);
    
-   max-width: var(--content-max-width); /* 75rem / 1200px */
-   width: var(--grid-max-width);
-   margin: 1.25rem auto 0 auto; /* 20px top */
+   max-width: 65rem;
+   width: 100%;
+   margin: 0 auto;
 }
 
 /* ===========================
    GAME CARD
 =========================== */
 .game-card {
-   height: 10rem; /* 160px */
+   height: 10rem;
    position: relative;
    border-radius: var(--radius-md);
    overflow: hidden;
-   border: 0.1875rem solid var(--accent); /* 3px */
+   border: 0.1875rem solid var(--accent);
    text-decoration: none;
+   color: var(--text-primary);
    
    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
                box-shadow 0.3s ease,
@@ -218,7 +220,7 @@ body {
    height: 100%;
    background-size: cover;
    background-position: center;
-   filter: var(--blur-soft) brightness(0.7);
+   filter: blur(0.3rem) brightness(0.7);
    transition: filter 0.25s ease;
 }
 
@@ -228,7 +230,7 @@ body {
 
 .game-card:hover {
    transform: scale(1.02);
-   box-shadow: 0 0 1.25rem rgba(255,87,34,0.6); /* 20px */
+   box-shadow: 0 0 1.25rem rgba(255,87,34,0.6);
    border-color: var(--accent);
 }
 
@@ -242,12 +244,13 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
+   text-align: center;
    
    font-size: 1.5rem;
    font-weight: 900;
    margin: 0;
    
-   text-shadow: 0.125rem 0.125rem 0.625rem rgba(0,0,0,1); /* 2px 2px 10px */
+   text-shadow: 0.125rem 0.125rem 0.625rem rgba(0,0,0,1);
    background: rgba(0,0,0,0.3);
 }
 
@@ -265,8 +268,8 @@ body {
    ACTIVE GAME CARD
 =========================== */
 .game-card.active {
-   transform: translateY(-1.25rem) translateZ(0); /* 20px */
-   box-shadow: 0 0.625rem 1.875rem rgba(255,87,34,0.4); /* 10px 30px */
+   transform: translateY(-1.25rem) translateZ(0);
+   box-shadow: 0 0.625rem 1.875rem rgba(255,87,34,0.4);
    border-color: #ffffff;
    z-index: 10;
 }
