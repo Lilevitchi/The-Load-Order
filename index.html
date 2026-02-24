@@ -8,7 +8,6 @@
   
   <title>The Load Order</title>
 
-  <!-- Mots-clés SEO -->
   <meta name="keywords" content="
     The Load Order, Mod, Modding Guide, Guide, Mods, Modding, Mod Guide, Astuces, Tutoriel, Resources, Resource, Tips, Walkthrough,
     Fallout 4, Fallout, FO4, Fallout New Vegas, Fallout NV, FNV, New Vegas, Tale of Two Wastelands, TTW, Skyrim Special Edition, SSE, Skyrim SE, Cyberpunk 2077,
@@ -16,39 +15,26 @@
     Nexus Mods, NexusMods, Vortex, Mod Organizer 2, MO2, Installer, Mod Manager,
     Performance, Stabilité, Optimisation, Fix, Fixes, FPS, Fast, Easy, Beginner">
   
-  <!-- Description SEO -->
   <meta name="description" content="Guides de modding complet, avec astuces et ressources pour de nombreux jeux dont Fallout 4, Fallout New Vegas, Tale of Two Wastelands, Fallout London et Cyberpunk 2077.">
   <meta http-equiv="content-language" content="fr">
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Open Graph / Réseaux sociaux -->
   <meta property="og:site_name" content="The Load Order">
   <meta property="og:title" content="The Load Order">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://theloadorder.example.com/"> <!-- mettre URL finale -->
   <meta property="og:image" content="assets/img/og-card.webp">
   <meta property="og:description" content="Guides modding, avec astuces et ressources pour divers jeux.">
-
-  <!-- Couleur thème mobile / navigateur -->
+  
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1115">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
-
-  <!-- Empêche Dark Reader de modifier les couleurs -->
   <meta name="darkreader-lock">
 
-  <!-- Javascript -->
   <script src="assets/js/main.js"></script>
-
-  <!-- CSS global et modules -->
+  
   <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
 <body class="theme">
-
-  <!-- Background sur body -->
   <style>
     body {
       background-image: url('assets/img/Fond.png') !important;
@@ -58,40 +44,32 @@
       background-position: center;
     }
   </style>
-
-  <!-- Menu burger / sélection rapide -->
+  
   <div class="quick-menu">
     <button id="menuToggle" class="menu-toggle">Choisir un jeu</button>
     <div id="menuItems" class="menu-items">
-      <a href="games/fallout4/" class="menu-link active">Fallout 4</a>
+      <a href="games/fallout4/" class="menu-link">Fallout 4</a>
       <a href="games/fallout-london/" class="menu-link">Fallout London</a>
       <a href="games/fnv/" class="menu-link">New Vegas</a>
       <a href="games/ttw/" class="menu-link">Tale of Two Wastelands</a>
       <a href="games/cyberpunk77/" class="menu-link">Cyberpunk 2077</a>
     </div>
   </div>
-
-  <!-- Conteneur principal -->
-  <div id="main-section" class="main-content">
-
-    <!-- Bloc central (robot + bulle + titre) -->
-    <div class="central-container">
-      <div class="central-content">
-
-        <!-- Bulle astuce -->
-        <div class="tip-bubble">
-          <p id="tip-text">Chargement d'une astuce...</p>
-        </div>
-
-        <!-- Robot -->
-        <img src="assets/img/lile-bot.png" class="assistant-image" alt="Assistant">
-
-        <!-- Titre -->
-        <div class="title-overlay">
-          <h1 class="main-title">Choisis ton univers</h1>
-        </div>
-      </div>
+  
+<div id="mainContent" class="main-section">
+  <div class="title-container">
+    <div class="tip-bubble">
+      <p id="tipText">Chargement d'une astuce...</p>
     </div>
+    <img src="../assets/img/lile-bot-fo4.png" alt="Assistant" class="assistant">
+          <h1 class="title">Choisis ton univers</h1>
+  </div>
+  <div class="buttonContainer">
+    <div class="buttonWrapper">
+
+    </div>
+  </div>
+</div>
 
     <!-- Sélection des jeux -->
     <div class="games-section">
