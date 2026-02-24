@@ -67,7 +67,7 @@ body {
    ROBOT
 =========================== */
 .assistant {
-  position: realtive;
+  position: relative;
   width: 37.5rem;
   top: -6.25rem;
   left: 50%;
