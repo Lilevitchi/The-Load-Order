@@ -51,9 +51,11 @@ function positionTipAboveRobot() {
     const robotRect = robot.getBoundingClientRect();
     const containerRect = robot.parentElement.getBoundingClientRect();
 
+    const top = robotRect.top - containerRect.top - tip.offsetHeight - 0.5 * robotRect.height;
+
     tip.style.position = "absolute";
+    tip.style.top = `${top}px`;
     tip.style.left = "50%";
-    tip.style.bottom = `${containerRect.height - (robotRect.top - containerRect.top) + 0.5 * robotRect.height}px`;
     tip.style.transform = "translateX(-50%)";
 }
 
