@@ -120,19 +120,35 @@ body.theme {
 }
 
 /* ===========================
+   SPLIT LAYOUT GLOBAL
+=========================== */
+
+.split-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 60vh;
+}
+
+/* ===========================
    MAIN SECTION & TITLE
 =========================== */
 .main-section {
-    user-select: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 100vh;
-    text-align: center;
-    backdrop-filter: saturate(100%) blur(0.5rem);
-    -webkit-backdrop-filter: saturate(100%) blur(0.5rem);
+  flex: 0 0 60vh;
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 2.5rem 1.25rem; /* 40px 20px */
+
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+
+  animation: slideUpSync 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
 }
 
 .title-container {
@@ -142,22 +158,28 @@ body.theme {
 }
 
 .title-container h1.title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
-    text-shadow: 0.05rem 0.075rem 0.15rem rgba(0,0,0,1);
-    margin: 1rem 0;
-    color: var(--text-primary);
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  text-align: center;
+
+  text-shadow:
+    0 0 1.25rem rgba(0,0,0,1),
+    0 0 0.625rem rgba(255,255,255,0.2);
+
+  margin: 0 auto 1.25rem auto;
+  white-space: nowrap;
+
+  animation: fastFade 0.8s ease-in-out 0.6s both;
 }
 
 .assistant {
-    position: absolute;
-    top: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    max-height: 300px;
-    z-index: -1;
-    pointer-events: none;
+  width: 37.5rem; /* 600px */
+  max-width: 80vw;
+  height: auto;
+  object-fit: contain;
+  margin: 0;
+  animation: slideUpFade 1s ease-out forwards;
 }
 
 /* ===========================
@@ -178,10 +200,12 @@ body.theme {
    BUTTONS
 =========================== */
 .button-container {
-    display: flex;
-    flex-direction: row;
-    gap: 3rem;
-    margin-bottom: 3rem;
+  display: flex;
+  gap: 8.75rem; /* 140px */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .button-wrapper {
@@ -190,35 +214,41 @@ body.theme {
 
 .button-wrapper a.btn-primary,
 .button-wrapper a.btn-secondary {
-    color: var(--text-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 17.5rem;  /* 280px */
-    height: 4.375rem; /* 70px */
-    font-size: 1.6rem;
-    border-radius: var(--radius-lg);
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 0.02rem;
-    background-color: var(--btn-dark-bg);
-    box-shadow: 0.1rem 0.1rem 0.6rem rgba(0,0,0,0.6);
-    transition: all 0.3s ease;
+  width: 18.75rem; /* 300px */
+  height: 4.5rem;  /* 72px */
+  padding: 0.625rem;
+
+  border-radius: var(--radius-md);
+  font-weight: 800;
+  font-size: 1.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.3s ease-in-out;
 }
 
-.button-wrapper a.btn-primary:hover {
-    border: 0.125rem solid var(--accent);
-    box-shadow: 0 0 0.6rem rgba(255,87,34,0.37);
-    background-color: var(--btn-dark-bg);
+.btn-primary {
+  background: var(--btn-dark-bg);
+  border: 0.125rem solid rgba(255,87,34,0.5);
 }
 
-.button-wrapper a.btn-secondary {
-    background-color: var(--btn-red-bg);
+.btn-primary:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 1.5625rem 0.125rem rgba(255,87,34,0.7);
+  transform: scale(1.03);
 }
 
-.button-wrapper a.btn-secondary:hover {
-    border: 0.125rem solid #ff0000;
-    box-shadow: 0 0 0.6rem rgba(255,0,0,0.37);
+.btn-secondary {
+  background: var(--btn-red-bg);
+  border: 0.125rem solid rgba(255,0,0,0.5);
+}
+
+.btn-secondary:hover {
+  border-color: #ff0000;
+  box-shadow: 0 0 1.5625rem 0.125rem rgba(255,0,0,0.7);
+  transform: scale(1.03);
 }
 
 .button-wrapper a strong {
@@ -226,13 +256,31 @@ body.theme {
 }
 
 /* ===========================
+   LIGNE DE SÉPARATION
+=========================== */
+
+.split-line {
+  width: 100%;
+  height: 0.0625rem; /* 1px */
+  background: var(--accent);
+  box-shadow: 0 -0.625rem 2.5rem rgba(0,0,0,0.6) inset;
+}
+
+/* ===========================
    GAME GRID
 =========================== */
 .games-section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
+  flex: 0 0 40vh;
+  min-height: 40vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  backdrop-filter: blur(1.25rem); /* 20px */
+  background: rgba(0,0,0,0.6);
+
+  overflow-y: auto;
 }
 
 .games-grid {
@@ -394,6 +442,31 @@ body.theme {
 .menu-items .menu-link.active {
     background-color: var(--accent);
     color: #000000;
+}
+
+/* ===========================
+   ANIMATIONS HUB ORIGINALES
+=========================== */
+
+@keyframes fastFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUpFade {
+  from { opacity: 0; transform: translateY(1.25rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUpSync {
+  0% {
+    transform: translateY(3.75rem) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateZ(0);
+    opacity: 1;
+  }
 }
 
 /* ===========================
