@@ -193,14 +193,38 @@ body.theme {
    TIP BUBBLE
 =========================== */
 .tip-bubble {
-    background: var(--bot-bg);
-    padding: 0.5rem 1rem;
-    border-radius: var(--radius-md);
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    text-shadow: 0 0.0625rem 0.25rem black;
+     position: relative;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  max-width: 300px;
+  margin-left: 180px;
+  margin-bottom: 0;
     color: var(--text-primary);
-    border: 0.125rem solid var(--accent);
+   text-shadow: 0 0.0625rem 0.25rem black;
+  animation: slideUpFade 0.8s ease-out 0.5s both;
+}
+
+.tip-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--accent);
+}
+
+.tip-bubble p {
+  color: var(--text-primary) !important;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0 !important;
+  font-style: italic;
+  text-align: left;
 }
 
 /* ===========================
