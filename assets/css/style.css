@@ -18,6 +18,10 @@
    /* RADIUS */
    --radius-md: 0.5rem; /* ~8px */
    --radius-lg: 0.75rem; /* ~12px */
+
+   /* CONTENU & GRIDS */
+   --content-max-width: 75rem;     /* 1200px */
+   --grid-max-width: 90%;
    
    /* EFFETS */
    --blur-soft: blur(0.3rem);  /* ~5px */
@@ -234,9 +238,9 @@ body.theme {
 .games-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(11.25rem, 1fr)); /* 180px */
-    gap: 0.9rem;
-    max-width: 75rem; /* 1200px */
-    width: 90%;
+    gap: var(--space-md);
+    max-width: var(--content-max-width); /* 1200px */
+    width: var(--grid-max-width);
 }
 
 .game-card {
@@ -270,7 +274,7 @@ body.theme {
     background-size: cover;
     background-position: center;
     border-radius: var(--radius-lg);
-    filter: brightness(0.7);
+    filter: blur(0.3rem) brightness(0.7);
     transition: filter 0.3s ease;
 }
 
