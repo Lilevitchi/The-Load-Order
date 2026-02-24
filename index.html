@@ -27,7 +27,7 @@
   <meta property="og:site_name" content="The Load Order">
   <meta property="og:title" content="The Load Order">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://theloadorder.example.com/"> <!-- mettre ton URL finale -->
+  <meta property="og:url" content="https://theloadorder.example.com/"> <!-- mettre URL finale -->
   <meta property="og:image" content="assets/images/og-card.webp">
   <meta property="og:description" content="Guides modding, avec astuces et ressources pour divers jeux.">
 
@@ -46,46 +46,56 @@
 
 </head>
 
-<body>
+<body class="theme">
 
-<!-- Hub principal -->
-<div class="hub">
-
-  <!-- Background général -->
-  <div class="hub-background" style="background-image:url('assets/images/Fond.png')"></div>
+  <!-- Background sur body -->
+  <style>
+    body {
+      background-image: url('assets/images/Fond.png') !important;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
 
   <!-- Menu burger / sélection rapide -->
-  <div class="hub-menu">
-    <button id="hubBurgerToggle" class="burger-toggle">Choisir un jeu</button>
-    <div id="hubBurgerMenu" class="burger-items">
-      <a href="games/fallout4/" class="burger-item active">Fallout 4</a>
-      <a href="games/fallout-london/" class="burger-item">Fallout London</a>
-      <a href="games/fnv/" class="burger-item">New Vegas</a>
-      <a href="games/ttw/" class="burger-item">Tale of Two Wastelands</a>
-      <a href="games/cyberpunk77/" class="burger-item">Cyberpunk 2077</a>
+  <div class="quick-menu">
+    <button id="menuToggle" class="menu-toggle">Choisir un jeu</button>
+    <div id="menuItems" class="menu-items">
+      <a href="games/fallout4/" class="menu-link active">Fallout 4</a>
+      <a href="games/fallout-london/" class="menu-link">Fallout London</a>
+      <a href="games/fnv/" class="menu-link">New Vegas</a>
+      <a href="games/ttw/" class="menu-link">Tale of Two Wastelands</a>
+      <a href="games/cyberpunk77/" class="menu-link">Cyberpunk 2077</a>
     </div>
   </div>
 
-  <!-- Zone centrale / robot et messages -->
-  <div class="hub-main">
-    <div class="hub-central">
+  <!-- Conteneur principal -->
+  <div id="main-section" class="main-content">
 
-      <!-- Bulle astuce / tips -->
-      <div class="bot-bubble">
-        <p id="hub-tip">Chargement d'une astuce...</p>
+    <!-- Bloc central (robot + bulle + titre) -->
+    <div class="central-container">
+      <div class="central-content">
+
+        <!-- Bulle astuce -->
+        <div class="tip-bubble">
+          <p id="tip-text">Chargement d'une astuce...</p>
+        </div>
+
+        <!-- Robot -->
+        <img src="assets/images/lile-bot.png" class="assistant-image" alt="Robot">
+
+        <!-- Titre -->
+        <div class="title-overlay">
+          <h1 class="main-title">Choisis ton univers</h1>
+        </div>
       </div>
-
-      <img src="assets/images/lile-bot.png" class="hub-bot" alt="Robot">
-
-      <div class="hub-overlay">
-        <h1 class="hub-title">Choisis ton univers</h1>
-      </div>
-
     </div>
 
     <!-- Sélection des jeux -->
-    <div class="hub-selection">
-      <div class="game-grid">
+    <div class="games-section">
+      <div class="games-grid">
         <a href="games/fallout4/" class="game-card">
           <div class="game-card-bg" style="background-image:url('assets/images/fo4.jpg')"></div>
           <h2>Fallout 4</h2>
@@ -108,9 +118,7 @@
         </a>
       </div>
     </div>
-
   </div>
-</div>
-
 </body>
+  
 </html>
