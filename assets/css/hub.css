@@ -81,7 +81,11 @@ body {
    TIP BUBBLE
 =========================== */
 .tip-bubble {
-   position: relative;
+   position: absolute;
+   bottom: 100%;
+   left: 50%; 
+   transform: translateX(-50%) translateY(-0.5rem);
+  
    background: rgba(0, 0, 0, 0.7);
    backdrop-filter: blur(0.625rem);
    border: 0.0625rem solid var(--accent);
@@ -139,7 +143,6 @@ body {
    justify-content: center;
    text-align: center;
    text-shadow: none;
-   background-color: #235163;
    
    transition: all 0.3s ease-in-out;
    box-shadow: 0.1rem 0.1rem 0.6rem rgba(0, 0, 0, 0.6);
