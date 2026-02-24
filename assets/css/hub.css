@@ -67,7 +67,7 @@ body {
    ROBOT
 =========================== */
 .assistant {
-  position: absolute;
+  position: realtive;
   width: 37.5rem;
   top: -6.25rem;
   left: 50%;
@@ -82,9 +82,9 @@ body {
 =========================== */
 .tip-bubble {
    position: absolute;
-   bottom: 100%;
+   top: -4rem;
    left: 50%; 
-   transform: translateX(-50%) translateY(-10rem);
+   transform: translateX(-50%);
   
    background: rgba(0, 0, 0, 0.7);
    backdrop-filter: blur(0.625rem);
@@ -179,6 +179,7 @@ body {
    justify-content: center;
    align-items: center;
    user-select: none;
+    color: var(--text-primary);
    
    border-top: 0.0625rem solid var(--accent);
    backdrop-filter: blur(1.25rem);
@@ -193,8 +194,8 @@ body {
    grid-template-columns: repeat(5, 12.5rem);
    gap: var(--space-md);
    
-   max-width: 65rem;
-   width: 100%;
+   max-width: 100%;
+   width: calc(5 * 12.5rem + 4 * var(--space-md));
    margin: 0 auto;
 }
 
@@ -208,7 +209,6 @@ body {
    overflow: hidden;
    border: 0.1875rem solid var(--accent);
    text-decoration: none;
-   color: var(--text-primary);
    
    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
                box-shadow 0.3s ease,
