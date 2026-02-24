@@ -1,6 +1,6 @@
 function initRobotTips() {
-    const tipElements = document.querySelectorAll(".tip-bubble p");
-    if (!tipElements.length) return;
+    const tipElement = document.getElementById("tipText");
+    if (!tipElement) return;
 
     const url = window.location.href;
     let category = "general";
@@ -27,22 +27,41 @@ function initRobotTips() {
     };
 
     const tips = allTips[category] || allTips["general"];
-    
-    // On choisit un tip aléatoire pour chaque tip-bubble
-    tipElements.forEach(tipEl => {
-        tipEl.innerText = tips[Math.floor(Math.random() * tips.length)];
+    tipElement.innerText = tips[Math.floor(Math.random() * tips.length)];
+}
+
+function initBurgerMenu() {
+    const toggle = document.getElementById("menuToggle");
+    const items = document.getElementById("menuItems");
+
+    if (!toggle || !items) return;
+
+    toggle.addEventListener("click", () => {
+        items.classList.toggle("open");
     });
+}
+
+function positionTipAboveRobot() {
+    const tip = document.querySelector(".tip-bubble");
+    const robot = document.querySelector(".assistant");
+
+    if (!tip || !robot) return;
+
+    // Positionner le tip juste au-dessus du robot
+    const robotRect = robot.getBoundingClientRect();
+    const containerRect = robot.parentElement.getBoundingClientRect();
+
+    tip.style.position = "absolute";
+    tip.style.left = "50%";
+    tip.style.bottom = `${containerRect.height - (robotRect.top - containerRect.top) + 0.5 * robotRect.height}px`;
+    tip.style.transform = "translateX(-50%)";
 }
 
 document.addEventListener('DOMContentLoaded', function() {
     initRobotTips();
+    initBurgerMenu();
+    positionTipAboveRobot();
 
-    // === BURGER MENU ===
-    const toggle = document.getElementById("menuToggle");
-    const items = document.getElementById("menuItems");
-    if (toggle && items) {
-        toggle.addEventListener("click", () => {
-            items.classList.toggle("open");
-        });
-    }
+    // Repositionne le tip si la fenêtre change de taille
+    window.addEventListener("resize", positionTipAboveRobot);
 });
