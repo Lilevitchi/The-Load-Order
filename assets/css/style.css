@@ -193,6 +193,10 @@ footer {
 /* =====================================================
    UTILITAIRES
 ===================================================== */
+div {
+  display: block;
+}
+
 .theme {
   background: #1a1d23;
   color: var(--text-primary);
