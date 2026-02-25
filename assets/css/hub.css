@@ -276,48 +276,48 @@ body {
    QUICK MENU
 =========================== */
 .quick-menu {
-   position: fixed;
-   top: 1rem;
-   left: 1rem;
-   z-index: 999;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
 }
 
 .menu-toggle {
-   padding: 0.5rem 1rem;
-   background-color: var(--bg-surface);
-   color: var(--text-primary);
-   border: 0.1875rem solid var(--accent);
-   border-radius: var(--radius-md);
-   font-weight: 600;
+  padding: 0.5rem 1rem;
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 0.1875rem solid var(--accent);
+  border-radius: var(--radius-md);
+  font-weight: 600;
 }
 
 .menu-toggle:hover {
-   transform: scale(1.02);
-   background-color: #3d3f4a;
-   box-shadow: 0 0 1.25rem rgba(255,87,34,0.6);
-   border-color: var(--accent);
+  transform: scale(1.02);
+  background-color: #3d3f4a;
+  box-shadow: 0 0 1.25rem rgba(255,87,34,0.6);
+  border-color: var(--accent);
 }
 
 .menu-items {
-   display: none;
-   margin-top: 0.5rem;
-   background-color: var(--bg-surface);
-   border-radius: var(--radius-md);
-   overflow: hidden;
-   transition: opacity var(--transition);
+  display: none;
+  margin-top: 0.5rem;
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: opacity var(--transition);
 }
 
 .menu-items.open {
-    display: block;
-    opacity: 1;
+  display: block;
+  opacity: 1;
 }
 
 .menu-items .menu-link {
-   display: block;
-   padding: 0.5rem 1rem;
-   text-decoration: none;
-   color: var(--text-primary);
-   border-bottom: 0.0625rem solid rgba(255,255,255,0.1);
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  border-bottom: 0.0625rem solid rgba(255,255,255,0.1);
 }
 
 .menu-items .menu-link:hover {
@@ -325,15 +325,15 @@ body {
 }
 
 .menu-items .menu-link.active {
-   background-color: var(--accent);
-   color: #000000;
+  background-color: var(--accent);
+  color: #000000;
 }
 
 .blur {
-   backdrop-filter: saturate(100%) blur(0.5rem);
-   -webkit-backdrop-filter: saturate(100%) blur(0.5rem);
-   transition: backdrop-filter 0.5s ease-in-out, -webkit-backdrop-filter 0.5s ease-in-out;
-   color: var(--text-primary);
+  backdrop-filter: saturate(100%) blur(0.5rem);
+  -webkit-backdrop-filter: saturate(100%) blur(0.5rem);
+  transition: backdrop-filter 0.5s ease-in-out, -webkit-backdrop-filter 0.5s ease-in-out;
+  color: var(--text-primary);
 }
 
 .blur h2 {
@@ -342,8 +342,8 @@ body {
 }
 
 .blur:hover {
-   backdrop-filter: saturate(120%) blur(1rem);
-   -webkit-backdrop-filter: saturate(120%) blur(1rem);
+  backdrop-filter: saturate(120%) blur(1rem);
+  -webkit-backdrop-filter: saturate(120%) blur(1rem);
 }
 
 #index-buttons {
@@ -363,20 +363,20 @@ body {
 }
 
 @media only screen and (max-width: 900px) {
-   .title-container h1 {
-      font-size: 1.8rem;
-   }
+  .title-container h1 {
+    font-size: 1.8rem;
+  }
 
-   .button-container {
-      flex-direction: column;
+  .button-container {
+     flex-direction: column;
       gap: 1rem;
       margin-bottom: 0;
    }
-
-   .button-wrapper {
-      margin-bottom: 1rem;
-   }
-
+  
+  .button-wrapper {
+    margin-bottom: 1rem;
+  }
+  
   .maincontent .btn-primary,
   .maincontent .btn-secondary {
     width: 16.25rem;
@@ -385,7 +385,7 @@ body {
   }
 
   .navigation-arrow .arrow-text {
-      display: none;
+    display: none;
    }
 
   h1,
