@@ -9,23 +9,23 @@ body {
    MAIN SECTION
 =========================== */
 .main-section {
-   flex: 0 0 60vh;
-   min-height: 60vh;
-   width: 100%;
+  height: 60vh;
+  width: 100%;
    
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-primary);
 
-   backdrop-filter: saturate(100%) blur(0.5rem);
-   -webkit-backdrop-filter: saturate(100%) blur(0.5rem);
-   transition: backdrop-filter 0.5s linear, -webkit-backdrop-filter 0.5s linear;
+  backdrop-filter: saturate(100%) blur(0.5rem);
+  -webkit-backdrop-filter: saturate(100%) blur(0.5rem);
+  transition: backdrop-filter 0.5s linear, -webkit-backdrop-filter 0.5s linear;
+  animation: slideUpSync 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
    
-   user-select: none;
-   font-size: 2rem;
-   text-decoration: none; 
+  user-select: none;
+  font-size: 2rem;
+  text-decoration: none; 
 }
 
 .title-container {
@@ -162,20 +162,19 @@ body {
    GAME GRID
 =========================== */
 .games-section {
-   flex: 0 0 40vh;
-   min-height: 40vh;
-   
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   user-select: none;
-   
-   border-top: 0.0625rem solid var(--accent);
-   backdrop-filter: blur(1.25rem);
-   background: rgba(0,0,0,0.7);
-   box-shadow: 0 -0.625rem 2.5rem rgba(0,0,0,0.6) inset;
-   
-   overflow-y: auto;
+  height: 40vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  
+  border-top: 0.0625rem solid var(--accent);
+  backdrop-filter: blur(1.25rem);
+  background: rgba(0,0,0,0.7);
+  box-shadow: 0 -0.625rem 2.5rem rgba(0,0,0,0.6) inset;
+  
+  overflow-y: auto;
 }
 
 .games-grid {
