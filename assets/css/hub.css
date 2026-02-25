@@ -6,16 +6,6 @@ body {
 }
 
 /* ===========================
-   SPLIT LAYOUT GLOBAL
-=========================== */
-.split-layout {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 100%;
-}
-
-/* ===========================
    MAIN SECTION
 =========================== */
 .main-section {
@@ -40,7 +30,7 @@ body {
 
 .title-container {
   position: relative;
-  align-items: center;
+  text-align: center;
 }
 
 /* ===========================
