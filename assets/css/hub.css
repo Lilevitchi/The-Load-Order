@@ -41,7 +41,7 @@ body {
 .title-container {
   position: relative;
   align-items: center;
-  min-height: 20rem;
+  min-height: 30rem;
 }
 
 /* ===========================
@@ -70,7 +70,7 @@ body {
 .assistant {
   position: absolute;
   width: 28vw;
-  top: -10%;
+  top: -20%;
   left: 50%;
   transform: translateX(-50%);
   max-width: 40vw;
