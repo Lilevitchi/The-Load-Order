@@ -34,8 +34,18 @@
   <link rel="stylesheet" href="../../assets/css/style.css">
   <link rel="stylesheet" href="../../assets/css/hub.css">
 </head>
-
-<body class="theme" style="--page-bg: url('../../assets/img/fo4.jpg');">
+  
+<body class="theme">
+  <style>
+    body {
+      background-image: url('../../assets/img/fo4.jpg') !important;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+  
   <div class="quick-menu">
     <button id="menuToggle" class="menu-toggle">Choisir un jeu</button>
     <div id="menuItems" class="menu-items">
