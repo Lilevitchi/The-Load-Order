@@ -69,11 +69,10 @@ body {
 =========================== */
 .assistant {
   position: absolute;
-  width: 25vw;
-  top: -18%;
+  top: -5rem;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 40vw;
+  max-width: 20rem;
   z-index: -1;
   pointer-events: none;
 }
