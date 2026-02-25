@@ -19,8 +19,7 @@ body {
    MAIN SECTION
 =========================== */
 .main-section {
-  flex: 0 0 60vh;
-  min-height: 60vh;
+  height: 60vh;
   width: 100%;
    
   display: flex;
@@ -42,7 +41,6 @@ body {
 .title-container {
   position: relative;
   align-items: center;
-  min-height: 15rem;
 }
 
 /* ===========================
@@ -174,8 +172,7 @@ body {
    GAME GRID
 =========================== */
 .games-section {
-  flex: 0 0 40vh;
-  min-height: 40vh;
+  height: 40vh;
   
   display: flex;
   justify-content: center;
