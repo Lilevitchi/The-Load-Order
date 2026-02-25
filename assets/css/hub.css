@@ -224,10 +224,6 @@ body::before {
   overflow: hidden;
   border: 0.1875rem solid var(--accent);
   text-decoration: none;
-  
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
-    box-shadow 0.3s ease,
-    border-color 0.3s ease;
 }
 
 .game-card-bg {
@@ -236,7 +232,6 @@ body::before {
   background-size: cover;
   background-position: center;
   filter: blur(0.3rem) brightness(0.7);
-  transition: filter 0.25s ease;
 }
 
 .game-card:hover .game-card-bg {
