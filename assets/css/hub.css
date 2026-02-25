@@ -294,7 +294,7 @@ body {
   background-color: var(--bg-surface);
   color: var(--text-primary);
   border: 0.1875rem solid var(--accent);
-  order-radius: var(--radius-md);
+  border-radius: var(--radius-md);
   font-weight: 600;
 }
 
