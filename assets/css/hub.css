@@ -83,7 +83,7 @@ body {
 =========================== */
 .tip-bubble {
    position: absolute;
-   bottom: calc(100% + 5rem);
+   bottom: calc(100% + 2rem);
    left: 50%; 
    transform: translateX(-50%);
   
