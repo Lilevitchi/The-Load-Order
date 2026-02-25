@@ -235,6 +235,29 @@ div {
   opacity: 1;
 }
 
+/* ============================================================
+   CURSEURS
+============================================================ */
+/* Curseur normal (hover) */
+a,
+.btn-primary,
+.btn-secondary,
+.game-card,
+.menu-toggle,
+.menu-link {
+  cursor: var(--cursor-default) !important;
+}
+
+/* Curseur clic */
+a:active,
+.btn-primary:active,
+.btn-secondary:active,
+.game-card:active,
+.menu-toggle:active,
+.menu-link:active {
+  cursor: var(--cursor-click) !important;
+}
+
 /* =====================================================
    ANIMATIONS
 ===================================================== */
