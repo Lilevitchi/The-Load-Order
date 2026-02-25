@@ -204,11 +204,11 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
-  filter: blur(0.3rem) brightness(0.7);
+  filter: saturate(100%) blur(0.3rem) brightness(0.7);
 }
 
 .game-card:hover .game-card-bg {
-  filter: blur(0) brightness(1.4);
+  filter: saturate(100%) blur(0) brightness(1.4);
 }
 
 .game-card:hover {
@@ -259,7 +259,7 @@ body {
 }
 
 .game-card.active .game-card-bg {
-  filter: blur(0) brightness(1.4);
+  filter: saturate(100%) blur(0) brightness(1.4);
 }
 
 .game-card.active:hover {
