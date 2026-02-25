@@ -63,14 +63,8 @@ body {
   top: -11rem;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 38rem;
+  max-height: 300px;
   pointer-events: none;
-}
-
-.assistant img {
-  display: block;
-  width: 100%;
-  z-index: 1;
 }
 
 /* ===========================
