@@ -63,8 +63,12 @@ body {
   left: 50%;
   transform: translateX(-50%);
   max-width: 38rem;
-  z-index: -1;
   pointer-events: none;
+}
+
+.assistant img {
+  display: block;
+  width: 100%;
 }
 
 /* ===========================
@@ -72,9 +76,9 @@ body {
 =========================== */
 .tip-bubble {
   position: absolute;
-  bottom: calc(100% + 2rem);
+  bottom: 100%;
   left: 50%; 
-  transform: translateX(-50%);
+  transform: translate(-50%, -1rem);
   
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(0.625rem);
