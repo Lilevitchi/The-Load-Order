@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10rem;
+  padding-top: 12rem;
   color: var(--text-primary);
 
   backdrop-filter: saturate(100%) blur(0.5rem);
