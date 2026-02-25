@@ -9,13 +9,14 @@ body {
    MAIN SECTION
 =========================== */
 .main-section {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
    
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10rem;
   color: var(--text-primary);
 
   backdrop-filter: saturate(100%) blur(0.5rem);
@@ -162,7 +163,7 @@ body {
    GAME GRID
 =========================== */
 .games-section {
-  height: 40vh;
+  height: 30vh;
   
   display: flex;
   justify-content: center;
