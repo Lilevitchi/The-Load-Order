@@ -61,7 +61,7 @@ body {
   top: -10rem;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 38rem;
+  max-height: 38rem;
   pointer-events: none;
   transition: all 0.4s ease;
   animation: slideUpFade 1s ease-out forwards;
