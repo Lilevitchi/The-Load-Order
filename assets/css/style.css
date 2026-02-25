@@ -56,7 +56,7 @@ html {
 body {
   margin: 0;
   font-size: 0.9rem;
-  line-height: 1.45;
+  line-height: 1.45em;
   font-weight: 400;
 }
 
@@ -96,17 +96,17 @@ h1, h2, h3 {
 
 h1 {
   font-size: 2.5rem;
-  line-height: 3.25;
+  line-height: 3.25em;
 }
 
 h2 {
   font-size: 2rem;
-  line-height: 1.2;
+  line-height: 1.2em;
 }
 
 h3 {
   font-size: 1.5rem;
-  line-height: 1.25;
+  line-height: 1.25em;
 }
 
 p {
