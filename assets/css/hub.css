@@ -29,8 +29,8 @@ body {
   align-items: center;
   color: var(--text-primary);
 
-  backdrop-filter: saturate(100%) blur(0);
-  -webkit-backdrop-filter: saturate(100%) blur(0);
+  backdrop-filter: saturate(100%) blur(0.5rem);
+  -webkit-backdrop-filter: saturate(100%) blur(0.5rem);
   transition: backdrop-filter 0.5s linear, -webkit-backdrop-filter 0.5s linear;
   animation: slideUpSync 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
    
