@@ -1,20 +1,8 @@
 body {
-  margin: 0;
-  position: relative;
-  overflow-x: hidden;
-  background-color: var(--bg-page);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-}
-
-body::before {
-  content: "";
-  inset: 0;
-  background-image: var(--page-bg);
-  z-index: -100;
-  animation: fastFade 1.5s ease-out forwards;
 }
 
 /* ===========================
@@ -43,9 +31,8 @@ body::before {
 
   backdrop-filter: saturate(100%) blur(0);
   -webkit-backdrop-filter: saturate(100%) blur(0);
-  animation:
-    slideUpSync 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both,
-    blurIn 0.6s ease forwards;
+  transition: backdrop-filter 0.5s linear, -webkit-backdrop-filter 0.5s linear;
+  animation: slideUpSync 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
    
   user-select: none;
   font-size: 2rem;
@@ -55,7 +42,7 @@ body::before {
 .title-container {
   position: relative;
   align-items: center;
-  min-height: 15rem;
+  min-height: 10rem;
 }
 
 /* ===========================
@@ -83,9 +70,9 @@ body::before {
 =========================== */
 .assistant {
   position: absolute;
-  top: 50%;
+  top: -10rem;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   max-width: 38rem;
   z-index: -1;
   pointer-events: none;
