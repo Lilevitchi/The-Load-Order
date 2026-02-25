@@ -67,6 +67,12 @@ body {
   pointer-events: none;
 }
 
+.assistant img {
+  display: block;
+  width: 100%;
+  z-index: 1;
+}
+
 /* ===========================
    TIP BUBBLE
 =========================== */
