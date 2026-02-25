@@ -55,7 +55,6 @@ html {
 
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
   line-height: 1.45;
   font-weight: 400;
@@ -80,11 +79,11 @@ body {
 *::-webkit-scrollbar-thumb {
   background: rgba(143,143,143,0.4);
   border-radius: 1rem;
-  transition: var(--transition);
 }
 
 *::-webkit-scrollbar-thumb:hover {
   background: rgba(240,240,240,0.7);
+  scale: 10%;
 }
 
 /* =====================================================
@@ -194,6 +193,12 @@ footer {
 /* =====================================================
    UTILITAIRES
 ===================================================== */
+.theme {
+  background: #1a1d23;
+  color: var(--text-primary);
+  font-family: arial, helvetica, sans-serif;
+}
+
 .flex {
   display: flex;
 }
