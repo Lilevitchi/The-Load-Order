@@ -37,8 +37,8 @@
   --transition: 0.2s ease;
 
   /* ===== CURSEURS ===== */
-  --cursor-default: url('../assets/curseur.png') 7 0, pointer;
-  --cursor-click: url('../assets/curseur-clic.png') 7 0, pointer;
+  --cursor-default: url('../img/curseur.png') 7 0, pointer;
+  --cursor-click: url('../img/curseur-clic.png') 7 0, pointer;
 }
 
 /* =====================================================
