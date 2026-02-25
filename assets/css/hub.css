@@ -1,20 +1,19 @@
 body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  margin: 0;
+  position: relative;
+  overflow-x: hidden;
 }
 
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("../assets/bg.jpg");
+  background-image: var(--page-bg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -10;
-  animation: fastFade 1.5s ease-out forwards;
+  z-index: -100;
+  animation: slowZoom 25s ease-in-out infinite alternate;
 }
 
 /* ===========================
