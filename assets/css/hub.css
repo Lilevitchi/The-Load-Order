@@ -62,8 +62,6 @@ body {
   left: 50%;
   transform: translateX(-50%);
   max-width: 38rem;
-  transition: all 0.4s ease;
-  animation: slideUpFade 1s ease-out forwards;
   z-index: -1;
   pointer-events: none;
 }
@@ -72,19 +70,20 @@ body {
    TIP BUBBLE
 =========================== */
 .tip-bubble {
-   position: absolute;
-   bottom: calc(100% + 2rem);
-   left: 50%; 
-   transform: translateX(-50%);
+  position: absolute;
+  bottom: calc(100% + 2rem);
+  left: 50%; 
+  transform: translateX(-50%);
   
-   background: rgba(0, 0, 0, 0.7);
-   backdrop-filter: blur(0.625rem);
-   border: 0.0625rem solid var(--accent);
-   border-radius: var(--radius-md);
-   padding: var(--space-md);
-   max-width: 18.75rem;
-   text-shadow: 0 0.0625rem 0.25rem black;
-   animation: slideUpFade 0.8s ease-out 0.5s both;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(0.625rem);
+  border: 0.0625rem solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  max-width: 18.75rem;
+  text-shadow: 0 0.0625rem 0.25rem black;
+  z-index: 1;
+  animation: slideUpFade 1s ease-out 0.5s both;
 }
 
 .tip-bubble::after {
