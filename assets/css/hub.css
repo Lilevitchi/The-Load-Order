@@ -1,18 +1,8 @@
 body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-
-/* ===========================
-   SPLIT LAYOUT GLOBAL
-=========================== */
-.split-layout {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 100%;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
 /* ===========================
