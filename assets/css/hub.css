@@ -87,75 +87,75 @@ body {
 }
 
 .tip-bubble::after {
-   content: '';
-   position: absolute;
-   top: 100%;
-   left: 50%;
-   transform: translateX(-50%);
-   border-left: 0.625rem solid transparent;
-   border-right: 0.625rem solid transparent;
-   border-top: 0.625rem solid var(--accent);
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 0.625rem solid transparent;
+  border-right: 0.625rem solid transparent;
+  border-top: 0.625rem solid var(--accent);
 }
 
 .tip-bubble p {
-   font-size: 0.95rem;
-   margin: 0;
-   font-style: italic;
+  font-size: 0.95rem;
+  margin: 0;
+  font-style: italic;
 }
 
 /* ===========================
    BUTTONS
 =========================== */
 .button-container {
-   display: flex;
-   gap: 8rem;
-   flex-direction: row;
+  display: flex;
+  gap: 8rem;
+  flex-direction: row;
 }
 
 .button-wrapper {
-   text-align: center;
+  text-align: center;
 }
 
 .main-section .btn-primary,
 .main-section .btn-secondary {
-   color: var(--text-primary);
-   width: 18.75rem;
-   height: 4.5rem;
-   padding: 0.625rem;
+  color: var(--text-primary);
+  width: 18.75rem;
+  height: 4.5rem;
+  padding: 0.625rem;
+  
+  border-radius: var(--radius-md);
+  font-size: 1.8rem;
    
-   border-radius: var(--radius-md);
-   font-size: 1.8rem;
-   
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   text-shadow: none;
-   
-   transition: all 0.3s ease-in-out;
-   box-shadow: 0.1rem 0.1rem 0.6rem rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-shadow: none;
+  
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0.1rem 0.1rem 0.6rem rgba(0, 0, 0, 0.6);
 }
 
 .btn-primary {
-   background: var(--btn-dark-bg);
-   border: 0.125rem solid rgba(255,87,34,0.5);
+  background: var(--btn-dark-bg);
+  border: 0.125rem solid rgba(255,87,34,0.5);
 }
 
 .btn-primary:hover {
-   border-color: var(--accent);
-   box-shadow: 0 0 1.5625rem 0.125rem rgba(255,87,34,0.7);
-   transform: scale(1.03);
+  border-color: var(--accent);
+  box-shadow: 0 0 1.5625rem 0.125rem rgba(255,87,34,0.7);
+  transform: scale(1.03);
 }
 
 .btn-secondary {
-   background: var(--btn-red-bg);
-   border: 0.125rem solid rgba(255,0,0,0.5);
+  background: var(--btn-red-bg);
+  border: 0.125rem solid rgba(255,0,0,0.5);
 }
 
 .btn-secondary:hover {
-   border-color: #ff0000;
-   box-shadow: 0 0 1.5625rem 0.125rem rgba(255,0,0,0.7);
-   transform: scale(1.03);
+  border-color: #ff0000;
+  box-shadow: 0 0 1.5625rem 0.125rem rgba(255,0,0,0.7);
+  transform: scale(1.03);
 }
 
 /* ===========================
