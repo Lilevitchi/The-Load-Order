@@ -62,6 +62,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   max-width: 38rem;
+  transition: all 0.4s ease;
+  animation: slideUpFade 1s ease-out forwards;
   z-index: -1;
   pointer-events: none;
 }
