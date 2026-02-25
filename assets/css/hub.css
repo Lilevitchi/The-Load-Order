@@ -37,11 +37,18 @@ body {
   user-select: none;
   font-size: 2rem;
   text-decoration: none; 
+
+  position: relative;
 }
 
 .title-container {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  text-align: center;
   min-height: 15rem;
 }
 
@@ -96,6 +103,7 @@ body {
   padding: var(--space-md);
   max-width: 18.75rem;
   text-shadow: 0 0.0625rem 0.25rem black;
+  z-index: 1;
 }
 
 .tip-bubble::after {
