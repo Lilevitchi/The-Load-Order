@@ -204,6 +204,16 @@ body {
   filter: saturate(100%) blur(0.3rem) brightness(0.7);
 }
 
+.game-card:hover .game-card-bg {
+  filter: saturate(100%) blur(0) brightness(1.4);
+}
+
+.game-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 1.25rem rgba(255,87,34,0.6);
+  border-color: var(--accent);
+}
+
 /* ===========================
    TEXTE SUR CARTE
 =========================== */
@@ -247,6 +257,10 @@ body {
 
 .game-card.active .game-card-bg {
   filter: saturate(100%) blur(0) brightness(1.4);
+}
+
+.game-card.active:hover {
+  transform: translateY(-1.25rem) scale(1.02) translateZ(0);
 }
 
 /* ===========================
@@ -329,20 +343,6 @@ body {
     border-color: #ff0000;
     box-shadow: 0 0 1.5625rem 0.125rem rgba(255,0,0,0.7);
     transform: scale(1.03);
-  }
-
-  .game-card:hover .game-card-bg {
-    filter: saturate(100%) blur(0) brightness(1.4);
-  }
-
-  .game-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 1.25rem rgba(255,87,34,0.6);
-    border-color: var(--accent);
-  }
-
-  .game-card.active:hover {
-    transform: translateY(-1.25rem) scale(1.02) translateZ(0);
   }
 
   .menu-toggle:hover {
