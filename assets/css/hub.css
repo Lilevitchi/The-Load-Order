@@ -375,10 +375,8 @@ body {
     font-size: 1em;
   }
 
-  .title-container .tip-bubble {
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.2s ease;
+  .tip-bubble {
+    display: none !important;
   }
   
   .button-container {
@@ -420,14 +418,13 @@ body {
     border-top: 0;
     box-shadow: none;
     transform: translateY(100%);
-    transition: transform 0.6s ease, height 0.6s ease;3
+    transition: transform 0.6s ease, height 0.6s ease;
     height: 0;
   }
   .main-section {
     height: 100vh;
     padding-top: 0;
     overflow-y: hidden;
-    /*transition: height 0.6s ease;*/
     transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
   }
   .quick-menu {
@@ -436,15 +433,3 @@ body {
     transition: opacity 0.2s ease;
   }
 }
-
-/*@media (min-width: 75rem) {
-  .games-section {
-    transition: transform 0.5s ease;
-  }
-  .main-section {
-    transition: height 0.6s ease;
-  }
-  .quick-menu {
-    transition: opacity 0.5s ease; 
-  }
-}*/
