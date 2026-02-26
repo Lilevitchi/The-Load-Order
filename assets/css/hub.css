@@ -423,6 +423,7 @@ body {
     height: 100vh;
     padding-top: 0;
     transition: height 0.6s ease;
+    backdrop-filter: saturate(100%) blur(0.5rem);
   }
   .quick-menu {
     opacity: 1;
