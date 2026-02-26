@@ -150,21 +150,9 @@ body {
   border: 0.125rem solid rgba(255,87,34,0.5);
 }
 
-.btn-primary:hover {
-  border-color: var(--accent);
-  box-shadow: 0 0 1.5625rem 0.125rem rgba(255,87,34,0.7);
-  transform: scale(1.03);
-}
-
 .btn-secondary {
   background: var(--btn-red-bg);
   border: 0.125rem solid rgba(255,0,0,0.5);
-}
-
-.btn-secondary:hover {
-  border-color: #ff0000;
-  box-shadow: 0 0 1.5625rem 0.125rem rgba(255,0,0,0.7);
-  transform: scale(1.03);
 }
 
 /* ===========================
@@ -216,16 +204,6 @@ body {
   filter: saturate(100%) blur(0.3rem) brightness(0.7);
 }
 
-.game-card:hover .game-card-bg {
-  filter: saturate(100%) blur(0) brightness(1.4);
-}
-
-.game-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 1.25rem rgba(255,87,34,0.6);
-  border-color: var(--accent);
-}
-
 /* ===========================
    TEXTE SUR CARTE
 =========================== */
@@ -271,10 +249,6 @@ body {
   filter: saturate(100%) blur(0) brightness(1.4);
 }
 
-.game-card.active:hover {
-  transform: translateY(-1.25rem) scale(1.02) translateZ(0);
-}
-
 /* ===========================
    QUICK MENU
 =========================== */
@@ -294,12 +268,6 @@ body {
   border: 0.1875rem solid var(--accent);
   border-radius: var(--radius-md);
   font-weight: 600;
-}
-
-.menu-toggle:hover {
-  transform: scale(1.02);
-  background-color: #3d3f4a;
-  border-color: var(--accent);
 }
 
 .menu-items {
@@ -324,10 +292,6 @@ body {
   border-bottom: 0.0625rem solid rgba(255,255,255,0.1);
 }
 
-.menu-items .menu-link:hover {
-  background-color: rgba(255, 87, 34, 0.08);
-}
-
 .menu-items .menu-link.active {
   background-color: var(--accent);
   color: #000000;
@@ -345,11 +309,6 @@ body {
   text-shadow: 0.125rem 0.125rem 0.625rem rgba(0,0,0,0.7);
 }
 
-.blur:hover {
-  backdrop-filter: saturate(120%) blur(1rem);
-  -webkit-backdrop-filter: saturate(120%) blur(1rem);
-}
-
 .header {
   box-shadow: 0 0.375rem 0.75rem 0.125rem rgba(0, 0, 0, 0.5) !important;
 }
@@ -357,6 +316,62 @@ body {
 #index-buttons {
   visibility: hidden;
   pointer-events: none; 
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-primary:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 1.5625rem 0.125rem rgba(255,87,34,0.7);
+    transform: scale(1.03);
+  }
+  
+  .btn-secondary:hover {
+    border-color: #ff0000;
+    box-shadow: 0 0 1.5625rem 0.125rem rgba(255,0,0,0.7);
+    transform: scale(1.03);
+  }
+  
+  .game-card:hover .game-card-bg {
+    filter: saturate(100%) blur(0) brightness(1.4);
+  }
+  
+  .game-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 1.25rem rgba(255,87,34,0.6);
+    border-color: var(--accent);
+  }
+
+  .game-card.active:hover {
+    transform: translateY(-1.25rem) scale(1.02) translateZ(0);
+  }
+
+  .menu-toggle:hover {
+    transform: scale(1.02);
+    background-color: #3d3f4a;
+    border-color: var(--accent);
+  }
+
+  .menu-items .menu-link:hover {
+    background-color: rgba(255, 87, 34, 0.08);
+  }
+
+  .blur:hover {
+    backdrop-filter: saturate(120%) blur(1rem);
+    -webkit-backdrop-filter: saturate(120%) blur(1rem);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .btn-primary:active,
+  .btn-secondary:active,
+  .game-card:active,
+  .game-card.active:active,
+  .menu-toggle:active,
+  .menu-items .menu-link:active,
+  .blur:active {
+    transform: scale(1.01);
+    box-shadow: 0 0 0.625rem rgba(0,0,0,0.5);
+  }
 }
 
 @media screen and (min-width: 900px) {
