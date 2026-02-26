@@ -93,7 +93,6 @@ body {
   text-shadow: 0 0.0625rem 0.25rem black;
   z-index: 5;
   animation: slideUpFade 1s ease-out 0.5s both;
-  transition: opacity 0.2s ease;
 }
 
 .tip-bubble::after {
@@ -286,7 +285,6 @@ body {
   z-index: 999;
   opacity: 0; 
   pointer-events: none;
-  transition: opacity 0.2s ease;
 }
 
 .menu-toggle {
@@ -379,6 +377,9 @@ body {
 
   .tip-bubble {
     opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    background: red !important;
   }
   
   .button-container {
@@ -438,6 +439,7 @@ body {
   .quick-menu {
     opacity: 1;
     pointer-events: auto;
+    transition: opacity 0.2s ease;
   }
 }
 
