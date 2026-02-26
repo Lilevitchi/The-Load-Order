@@ -93,6 +93,7 @@ body {
   text-shadow: 0 0.0625rem 0.25rem black;
   z-index: 5;
   animation: slideUpFade 1s ease-out 0.5s both;
+  transition: opacity 0.2s ease;
 }
 
 .tip-bubble::after {
@@ -285,6 +286,7 @@ body {
   z-index: 999;
   opacity: 0; 
   pointer-events: none;
+  transition: opacity 0.2s ease;
 }
 
 .menu-toggle {
@@ -350,6 +352,10 @@ body {
   -webkit-backdrop-filter: saturate(120%) blur(1rem);
 }
 
+.header {
+  box-shadow: 0 0.375rem 0.75rem 0.125rem rgba(0, 0, 0, 0.5) !important;
+}
+
 #index-buttons {
   visibility: hidden;
   pointer-events: none; 
@@ -370,6 +376,10 @@ body {
   .title-container h1 {
     font-size: 1em;
   }
+
+  .tip-bubble {
+    opacity: 0;
+  }
   
   .button-container {
     flex-direction: column;
@@ -381,8 +391,8 @@ body {
     margin-bottom: 1rem;
   }
   
-  .maincontent .btn-primary,
-  .maincontent .btn-secondary {
+  .main-section .btn-primary,
+  .main-section .btn-secondary {
     width: 16.25rem;
     height: 3.625rem;
     font-size: 1.4rem;
@@ -398,21 +408,17 @@ body {
   }
 }
 
-.header {
-  box-shadow: 0 0.375rem 0.75rem 0.125rem rgba(0, 0, 0, 0.5) !important;
-}
-
 @media screen and (max-width: 768px) {
   .title-container {
     min-height: 15rem;
   }
-  .assistant {
+  .assistant-wrapper {
     top: -5%;
     width: 50vw;
   }
 }
 
-@media (max-width: 75rem) {
+@media (max-width: 1200px) {
   .games-section {
     overflow-y: hidden; 
     pointer-events: none;
@@ -427,11 +433,11 @@ body {
     height: 100vh;
     padding-top: 0;
     overflow-y: hidden;
+    transition: height 0.6s ease;
   }
   .quick-menu {
     opacity: 1;
     pointer-events: auto;
-    transition: opacity 0.2s ease;
   }
 }
 
