@@ -60,7 +60,7 @@ body {
 =========================== */
 .assistant-wrapper {
   position: absolute;
-  top: -11rem;
+  top: -8rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -99,7 +99,7 @@ body {
   content: '';
   position: absolute;
   top: 100%;
-  left: 50%;
+  left: 10%;
   transform: translateX(-50%);
   border-left: 0.625rem solid transparent;
   border-right: 0.625rem solid transparent;
