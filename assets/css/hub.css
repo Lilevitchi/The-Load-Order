@@ -391,6 +391,10 @@ body {
     margin-bottom: 1em;
   }
   
+  .assistant-img {
+    height: 16.75rem;
+  }
+  
   .main-section .btn-primary,
   .main-section .btn-secondary {
     width: 16.25rem;
