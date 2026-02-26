@@ -375,21 +375,20 @@ body {
     font-size: 1em;
   }
 
-  .tip-bubble {
+  .title-container .tip-bubble {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease;
-    background: red !important;
   }
   
   .button-container {
     flex-direction: column;
-    gap: 1rem;
-    margin-bottom: 0;
+    gap: 0;
+    margin-bottom: -5em;
    }
   
   .button-wrapper {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
   }
   
   .main-section .btn-primary,
@@ -406,16 +405,6 @@ body {
   h1,
   h2 {
     line-height: 1.2em;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .title-container {
-    min-height: 15rem;
-  }
-  .assistant-wrapper {
-    top: -5%;
-    width: 50vw;
   }
 }
 
