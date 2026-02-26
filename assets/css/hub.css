@@ -179,7 +179,7 @@ body {
   user-select: none;
   
   border-top: 0.0625rem solid var(--accent);
-  /*backdrop-filter: blur(1.25rem);*/
+  backdrop-filter: blur(1.25rem);
   background: rgba(0,0,0,0.7);
   box-shadow: 0 -0.625rem 2.5rem rgba(0,0,0,0.6) inset;
   
@@ -423,7 +423,7 @@ body {
     height: 100vh;
     padding-top: 0;
     overflow-y: hidden;
-    
+    transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
   }
   .quick-menu {
     opacity: 1;
