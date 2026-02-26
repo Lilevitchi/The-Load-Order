@@ -185,6 +185,7 @@ body {
   opacity: 1; 
   
   overflow-y: auto;
+  transform: translateY(0);
 }
 
 .games-grid {
@@ -415,20 +416,26 @@ body {
 
 @media (max-width: 75rem) {
   .games-section {
-    transform: translateY(100%);
+    transform: translateY(2rem);
+    height: 0;
+    padding: 0;
+    overflow: hidden; 
     pointer-events: none;
     opacity: 0; 
-    /*transition: transform 0.5s ease;*/
+    transition: 
+      transform 0.5s ease,
+      height 0.5s ease,
+      padding 0.5s ease;
   }
   .main-section {
     height: 100vh;
     padding-top: 0;
-    /*transition: height 0.6s ease;*/
+    transition: height 0.6s ease;
   }
   .quick-menu {
     opacity: 1;
     pointer-events: auto;
-    /*transition: opacity 0.5s ease;*/ 
+    transition: opacity 0.5s ease;
   }
 }
 
