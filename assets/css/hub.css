@@ -361,17 +361,6 @@ body {
   }
 }
 
-@media (hover: none) and (pointer: coarse) {
-  .btn-primary:active,
-  .btn-secondary:active,
-  .menu-toggle:active,
-  .menu-items .menu-link:active,
-  .blur:active {
-    transform: scale(1.01);
-    box-shadow: 0 0 0.625rem rgba(0,0,0,0.5);
-  }
-}
-
 @media screen and (min-width: 900px) {
   #title br {
     display: none;
