@@ -364,8 +364,6 @@ body {
 @media (hover: none) and (pointer: coarse) {
   .btn-primary:active,
   .btn-secondary:active,
-  .game-card:active,
-  .game-card.active:active,
   .menu-toggle:active,
   .menu-items .menu-link:active,
   .blur:active {
