@@ -23,6 +23,7 @@ body {
   -webkit-backdrop-filter: saturate(100%) blur(0.5rem);
   transition: backdrop-filter 0.5s linear, -webkit-backdrop-filter 0.5s linear;
   animation: slideUpSync 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+  transition: height 0.6s ease;
    
   user-select: none;
   font-size: 2rem;
@@ -182,6 +183,7 @@ body {
   backdrop-filter: blur(1.25rem);
   background: rgba(0,0,0,0.7);
   box-shadow: 0 -0.625rem 2.5rem rgba(0,0,0,0.6) inset;
+  transition: transform 0.5s ease;
   
   overflow-y: auto;
 }
@@ -283,6 +285,9 @@ body {
   top: 1rem;
   left: 1rem;
   z-index: 999;
+  opacity: 0;
+  transition: opacity 0.5s ease;  
+  pointer-events: none;
 }
 
 .menu-toggle {
@@ -415,27 +420,13 @@ body {
   .games-section {
     transform: translateY(100%);
     pointer-events: none;
-    transition: transform 0.5s ease;
   }
   .main-section {
     height: 100vh;
     padding-top: 0;
-    transition: height 0.6s ease;
   }
   .quick-menu {
     opacity: 1;
     pointer-events: auto;
-    transition: opacity 0.5s ease;
-  }
-}
-
-@media (min-width: 75rem) {
-  .games-section {
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-  .quick-menu {
-    opacity: 0;
-    pointer-events: none;
   }
 }
