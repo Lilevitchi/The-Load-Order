@@ -22,7 +22,6 @@
   font-size: 2rem;
   color: var(--accent);
   font-weight: 700;
-  white-space: nowrap;
 }
 
 .header-title img {
@@ -39,12 +38,7 @@
 .header-links a {
   color: #ffffff;
   font-size: 1rem;
-  margin-left: 1rem;
-  transition: opacity 0.2s ease;
-}
-
-.header-links a:hover {
-  opacity: 0.75;
+  margin-right: 1rem;
 }
 
 .header a:hover {
