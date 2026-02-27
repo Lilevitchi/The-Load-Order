@@ -15,7 +15,15 @@
 
   --text-primary: #ffffff;
   --text-muted: #aab2c0;
-
+   
+   /* ===== TAILLES GLOBALES ===== */
+   --header-height: 4.5rem;
+   --footer-height: 1.875rem;
+   --sidebar-width-primary: 13.5rem;
+   --sidebar-width-secondary: 14.125rem;
+   --sidebar-gap: 0.625rem;
+   --footer-visible-height: 0rem;     /* piloté par JS */
+   
   /* ===== RADIUS ===== */
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
