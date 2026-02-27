@@ -1,16 +1,17 @@
 .header {
-  outline: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: rgb(43, 43, 43);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
-  padding: 0 1em 0 1em;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border: 1px solid transparent;
-  display: flex;
+  height: var(--header-height);
   position: fixed;
+  background-color: var(--bg-surface);
+  border-bottom-left-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+  border: 1px solid transparent;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.13);
+  padding: 0 0.9rem 0 0.9rem;
+  display: flex;
   width: 100%;
   z-index: 3;
-  height: 5em;
+  
 }
 
 .header-links {
