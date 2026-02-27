@@ -264,51 +264,66 @@ body {
 }
 
 /* ===========================
-   QUICK MENU
+   HEADER DROPDOWN MENU
 =========================== */
-.quick-menu {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 999;
-  opacity: 0; 
-  pointer-events: none;
+.header-menu {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
 }
 
-.menu-toggle {
-  padding: 0.5rem 1rem;
-  background-color: var(--bg-surface);
-  color: var(--text-primary);
-  border: 0.1875rem solid var(--accent);
-  border-radius: var(--radius-md);
-  font-weight: 600;
+.header-menu img {
+  height: 2rem;
+  width: auto;
 }
 
+/* Dropdown */
 .menu-items {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  width: 100%;
+  background: var(--bg-surface);
+  border-bottom: 0.125rem solid var(--accent);
   display: none;
-  margin-top: 0.5rem;
-  background-color: var(--bg-surface);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  transition: opacity var(--transition);
+  flex-direction: column;
+  z-index: 5;
 }
 
 .menu-items.open {
-  display: block;
-  opacity: 1;
+  display: flex;
 }
 
 .menu-items .menu-link {
-  display: block;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   text-decoration: none;
   color: var(--text-primary);
   border-bottom: 0.0625rem solid rgba(255,255,255,0.1);
 }
 
 .menu-items .menu-link.active {
-  background-color: var(--accent);
-  color: #000000;
+  background: var(--accent);
+  color: #000;
+}
+
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 4;
+}
+
+.menu-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .blur {
