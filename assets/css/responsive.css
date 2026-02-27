@@ -1,94 +1,32 @@
 @media (min-width: 1200px) {
-  .header-index .header,
-  .header-index .header-links,
-  .header-index .header-menu {
-    display: none;
-  }
-}
-
-@media (max-width: 900px) {
-  .title-container h1 {
-    font-size: 1em;
-  }
-
-  .tip-bubble {
-    display: none !important;
-  }
-  
-  .button-container {
-    flex-direction: column;
-    gap: 0;
-    margin-bottom: -3rem;
-   }
-  
-  .button-wrapper {
-    margin-bottom: 1rem;
-  }
-  
-  .assistant-img {
-    height: 16.75rem;
-  }
-  
-  .main-section .btn-primary,
-  .main-section .btn-secondary {
-    width: 16.25rem;
-    height: 3.625rem;
-    font-size: 1.4rem;
-  }
-
-  .navigation-arrow .arrow-text {
-    display: none;
-   }
-  
-  h1,
-  h2 {
-    line-height: 1.2em;
-  }
-
-   .content {
-      padding: 1rem;
-   }
-}
-
-/* =====================================================
-   RESPONSIVE
-===================================================== */
-
-@media (max-width: 700px) {
-  .width-90 { max-width: 100%; }
-  .width-70 { max-width: 90%; }
-  .width-60 { max-width: 80%; }
-  .width-40 { max-width: 70%; }
-}
-
-@media (max-width: 470px) {
-  .container {
-    overflow-x: hidden;
-  }
-
-  .content {
-    width: 100%;
-    padding: 0.5rem;
-  }
-
-  textarea {
-    max-width: 95%;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .header-links {
-    display: none;
-  }
-
-  #logo {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .header-menu,
   .header-index {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .games-section {
+    overflow-y: hidden; 
+    pointer-events: none;
+    opacity: 0;
+    border-top: 0;
+    box-shadow: none;
+    transform: translateY(100%);
+    transition: transform 0.6s ease, height 0.6s ease;
+    height: 0;
+  }
+  .main-section {
+    height: 100vh;
+    padding-top: 0;
+    overflow-y: hidden;
+    transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-links,
+  .header-title,
+  .header-menu {
     display: none;
   }
 }
@@ -101,6 +39,12 @@
   #title::after {
     content: " ";
     display: inline;
+  }
+}
+
+@media (max-width: 900px) {
+  .content {
+    padding: 1rem;
   }
 }
 
@@ -144,71 +88,34 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .games-section {
-    overflow-y: hidden; 
-    pointer-events: none;
-    opacity: 0;
-    border-top: 0;
-    box-shadow: none;
-    transform: translateY(100%);
-    transition: transform 0.6s ease, height 0.6s ease;
-    height: 0;
-  }
-  .main-section {
-    height: 100vh;
-    padding-top: 0;
-    overflow-y: hidden;
-    transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
-  }
+@media (max-width: 700px) {
+  .width-90 { max-width: 100%; }
+  .width-70 { max-width: 90%; }
+  .width-60 { max-width: 80%; }
+  .width-40 { max-width: 70%; }
 }
 
-@media (min-width: 1200px) {
-  .header-links,
-  .header-title,
-  .header-menu {
-    display: none;
-  }
-}
-
-/* 900–1199px : header-links visibles, texte complet */
-@media (min-width: 900px) and (max-width: 1199px) {
-  .header-links {
-    display: flex;
-  }
-  .header-menu {
-    display: none;
-  }
-  .header-title span {
-    display: inline;
-    font-size: 1.25rem;
-  }
-}
-
-/* 700–899px : header-links visibles, texte réduit */
-@media (min-width: 700px) and (max-width: 899px) {
-  .header-links {
-    display: flex;
-  }
-  .header-menu {
-    display: none;
-  }
-  .header-title span {
-    display: inline;
-    font-size: 1rem; /* réduit le texte */
-  }
-}
-
-/* <700px : burger menu visible, header-links masqué */
-@media (max-width: 699px) {
+@media only screen and (max-width: 700px) {
   .header-links {
     display: none;
   }
-  .header-menu {
-    display: flex;
+
+  #logo {
+    display: none;
   }
-  .header-title span {
-    display: inline;
-    font-size: 1rem;
+}
+
+@media (max-width: 470px) {
+  .container {
+    overflow-x: hidden;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0.5rem;
+  }
+
+  textarea {
+    max-width: 95%;
   }
 }
