@@ -31,6 +31,12 @@
   color: rgb(255, 255, 255);
 }
 
+.header-title span {
+  font-size: 1.25rem;
+  color: #fff;
+  white-space: nowrap;
+}
+
 .header-links {
   display: flex;
   align-items: center;
@@ -41,6 +47,7 @@
   color: var(--accent);
   font-size: 1rem;
   text-decoration: none;
+  margin-left: 1rem;
   transition: opacity 0.2s ease;
 }
 
@@ -50,17 +57,6 @@
 
 .header a:hover {
   text-shadow: rgba(255, 255, 255, 0.5) 0 0 0.625rem;
-}
-
-.header-title img {
-  padding: 0.5rem 0.625rem 0.5rem 0;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.header-menu {
-  display: flex;
-  align-items: center;
 }
 
 .header-index {
@@ -175,21 +171,4 @@ body.menu-open {
 
 #navButton:active {
   transform: scale3d(0.95, 0.95, 0.95) !important;
-}
-
-@media only screen and (max-width: 700px) {
-  .header-links {
-    display: none;
-  }
-
-  #logo {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .header-menu,
-  .header-index {
-    display: none;
-  }
 }
