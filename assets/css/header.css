@@ -94,7 +94,7 @@
   width: 20rem; 
   max-width: 90%; 
   background: var(--bg-surface);
-  border-bottom: 0.125rem solid var(--accent);
+  border: 0.125rem solid var(--accent);
 
   display: flex;
   flex-direction: column;
