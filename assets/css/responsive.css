@@ -1,10 +1,10 @@
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .header-index {
     display: none;
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .games-section {
     overflow-y: hidden; 
     pointer-events: none;
@@ -24,7 +24,7 @@
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 901px) {
   #title br {
     display: none;
   }
@@ -76,6 +76,12 @@
   h1,
   h2 {
     line-height: 1.2em;
+  }
+}
+
+@media (min-width: 701px) {
+  .header-menu {
+    display: none;
   }
 }
 
