@@ -67,6 +67,12 @@
   border: none;
 }
 
+.header-menu.active {
+  background-color: var(--bg-surface);
+  border: none;
+  color: var(--accent);
+}
+
 .header-menu svg {
   width: 2rem;
   height: 2rem;
