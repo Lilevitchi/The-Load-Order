@@ -1,5 +1,7 @@
 @media (min-width: 1200px) {
-  .header-index {
+  .header-index .header,
+  .header-index .header-links,
+  .header-index .header-menu {
     display: none;
   }
 }
