@@ -62,18 +62,15 @@
 /* ===========================
    HEADER DROPDOWN MENU
 =========================== */
-.header-menu {
-  background: none;
-  border: none;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  padding: 0;
+.header-menu svg {
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.3s ease;
+  color: var(--accent);
 }
 
-.header-menu img {
-  height: 2rem;
-  width: auto;
+#menuToggle.active svg {
+  transform: rotate(90deg) scale(1.05);
 }
 
 /* ===========================
@@ -140,27 +137,8 @@
 }
 
 /* ===========================
-   BUTTON ANIMATION
-=========================== */
-#menuToggle {
-  transition: transform 0.3s ease;
-}
-
-#menuToggle.active {
-  transform: rotate(90deg) scale(1.05);
-}
-
-/* ===========================
    LOCK SCROLL
 =========================== */
 body.menu-open {
   overflow: hidden;
-}
-
-#navButton:hover {
-  transform: scale3d(1.05, 1.05, 1.05);
-}
-
-#navButton:active {
-  transform: scale3d(0.95, 0.95, 0.95) !important;
 }
