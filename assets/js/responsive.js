@@ -9,7 +9,8 @@ function setupResponsiveHeader() {
         "Fallout London": "FL",
         "Fallout: New Vegas": "FNV",
         "Tale of Two Wastelands": "TTW",
-        "Cyberpunk": "CP77"
+        "Cyberpunk": "CP77",
+        "The Load Order": "TLO"
     };
 
     const isNarrow = window.innerWidth < 900;
