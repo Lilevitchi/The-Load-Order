@@ -4,8 +4,8 @@
   background-color: var(--bg-surface);
   border-bottom-left-radius: var(--radius-md);
   border-bottom-right-radius: var(--radius-md);
-  border: 1px solid transparent;
-  outline: 1px solid rgba(0, 0, 0, 0.1);
+  border: 0.0625rem solid transparent;
+  outline: 0.0625rem solid rgba(0, 0, 0, 0.1);
   box-shadow: 0.1rem 0.1rem 0.6rem rgba(0, 0, 0, 0.13);
   padding: 0 0.9rem 0 0.9rem;
   display: flex;
@@ -21,9 +21,14 @@
 }
 
 .header-links a {
-  color: #ffffff;
-  font-size: 1.2em;
-  margin-right: 1em;
+  color: var(--accent);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.header-links a:hover {
+  opacity: 0.75;
 }
 
 .header-title {
