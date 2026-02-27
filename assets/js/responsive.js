@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 function setupResponsiveHeader() {
     const abbreviations = {
         "Fallout 4": "FO4",
+        "Fallout London": "FL",
         "Fallout: New Vegas": "FNV",
         "Tale of Two Wastelands": "TTW",
         "Cyberpunk": "CP77"
