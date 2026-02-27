@@ -50,7 +50,7 @@
 }
 
 .header a:hover {
-  text-shadow:  rgba(255,87,34,0.7) 0 0 1.5625rem 0.125rem;
+  text-shadow: rgba(255, 255, 255, 0.5) 0 0 0.625rem;
 }
 
 .header-index {
