@@ -64,6 +64,7 @@
 =========================== */
 .header-menu {
   background-color: var(--bg-surface);
+  border: none;
 }
 
 .header-menu svg {
