@@ -25,7 +25,11 @@
 
   .header-links {
     flex-wrap: wrap;
-    gap: 0.5rem 1rem;
+    width: 400px;
+  }
+
+  .header-links a {
+    flex: 0 0 50%;
   }
 }
 
