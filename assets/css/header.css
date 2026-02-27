@@ -91,7 +91,8 @@
   position: fixed;
   top: var(--header-height);
   left: 0;
-  width: 100%;
+  width: 20rem; 
+  max-width: 90%; 
   background: var(--bg-surface);
   border-bottom: 0.125rem solid var(--accent);
 
@@ -123,6 +124,12 @@
 }
 
 .menu-items .menu-link.active {
+  background: var(--accent);
+  color: #000;
+}
+
+/* hover sur les liens */
+.menu-items .menu-link:hover {
   background: var(--accent);
   color: #000;
 }
