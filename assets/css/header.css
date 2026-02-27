@@ -161,10 +161,6 @@ body.menu-open {
   overflow: hidden;
 }
 
-#navButton {
-  cursor: pointer;
-}
-
 #navButton:hover {
   transform: scale3d(1.05, 1.05, 1.05);
 }
