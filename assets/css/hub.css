@@ -479,9 +479,4 @@ body.menu-open {
     overflow-y: hidden;
     transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
   }
-  .quick-menu {
-    opacity: 1;
-    pointer-events: auto;
-    transition: opacity 0.2s ease;
-  }
 }
