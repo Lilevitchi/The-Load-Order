@@ -144,3 +144,53 @@
     transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
   }
 }
+
+@media (min-width: 1200px) {
+  .header-links,
+  .header-title,
+  .header-menu {
+    display: none;
+  }
+}
+
+/* 900–1199px : header-links visibles, texte complet */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .header-links {
+    display: flex;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-title span {
+    display: inline;
+    font-size: 1.25rem;
+  }
+}
+
+/* 700–899px : header-links visibles, texte réduit */
+@media (min-width: 700px) and (max-width: 899px) {
+  .header-links {
+    display: flex;
+  }
+  .header-menu {
+    display: none;
+  }
+  .header-title span {
+    display: inline;
+    font-size: 1rem; /* réduit le texte */
+  }
+}
+
+/* <700px : burger menu visible, header-links masqué */
+@media (max-width: 699px) {
+  .header-links {
+    display: none;
+  }
+  .header-menu {
+    display: flex;
+  }
+  .header-title span {
+    display: inline;
+    font-size: 1rem;
+  }
+}
