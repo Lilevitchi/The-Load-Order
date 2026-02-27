@@ -62,6 +62,10 @@
 /* ===========================
    HEADER DROPDOWN MENU
 =========================== */
+.header-menu {
+  background-color: var(--bg-surface);
+}
+
 .header-menu svg {
   width: 2rem;
   height: 2rem;
