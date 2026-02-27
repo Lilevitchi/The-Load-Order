@@ -261,3 +261,8 @@ body {
 .game-card.active:hover {
   transform: translateY(-1.25rem) scale(1.02) translateZ(0);
 }
+
+#index-buttons {
+  visibility: hidden;
+  pointer-events: none; 
+}
