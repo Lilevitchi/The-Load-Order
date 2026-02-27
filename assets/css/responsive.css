@@ -4,7 +4,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
   .games-section {
     overflow-y: hidden; 
     pointer-events: none;
@@ -15,11 +15,16 @@
     transition: transform 0.6s ease, height 0.6s ease;
     height: 0;
   }
+  
   .main-section {
     height: 100vh;
     padding-top: 0;
     overflow-y: hidden;
     transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
+  }
+
+  .header-links {
+    display: none;
   }
 }
 
