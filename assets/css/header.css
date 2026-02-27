@@ -23,6 +23,11 @@
   color: var(--accent);
 }
 
+.header-title span {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
 .header-title img {
   padding: 0.5rem 0.625rem 0.5rem 0;
   height: 5rem;
@@ -54,13 +59,13 @@
    HEADER DROPDOWN MENU
 =========================== */
 .header-menu {
-  background-color: var(--bg-surface);
+  background-color: var(--bg-surface) !important;
   border: none;
   margin-right: 1rem;
 }
 
 .header-menu.active {
-  background-color: var(--bg-surface);
+  background-color: var(--bg-surface) !important;
   border: none;
   color: var(--accent);
 }
