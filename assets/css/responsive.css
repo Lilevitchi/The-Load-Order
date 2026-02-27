@@ -22,13 +22,24 @@
     overflow-y: hidden;
     transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
   }
+}
 
-  .header-links {
+@media (min-width: 900px) {
+  #title br {
     display: none;
+  }
+
+  #title::after {
+    content: " ";
+    display: inline;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media (max-width: 900px) {
+  .content {
+    padding: 1rem;
+  }
+  
   .title-container h1 {
     font-size: 1em;
   }
@@ -68,33 +79,12 @@
   }
 }
 
-
-@media screen and (min-width: 900px) {
-  #title br {
-    display: none;
-  }
-
-  #title::after {
-    content: " ";
-    display: inline;
-  }
-}
-
-@media (max-width: 900px) {
-  .content {
-    padding: 1rem;
-  }
-}
-
-
 @media (max-width: 700px) {
   .width-90 { max-width: 100%; }
   .width-70 { max-width: 90%; }
   .width-60 { max-width: 80%; }
   .width-40 { max-width: 70%; }
-}
 
-@media only screen and (max-width: 700px) {
   .header-links {
     display: none;
   }
