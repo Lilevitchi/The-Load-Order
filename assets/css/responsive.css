@@ -28,6 +28,15 @@
     white-space: pre-line;
     text-align: left;
   }
+
+    #headerLinks br {
+    display: none;
+  }
+
+  #headerLinks::after {
+    content: " ";
+    display: inline;
+  }
 }
 
 @media (min-width: 900px) {
