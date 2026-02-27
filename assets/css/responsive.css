@@ -2,6 +2,10 @@
   .header-index {
     display: none;
   }
+
+  #headerLinks br {
+    display: none;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -23,10 +27,8 @@
     transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
   }
 
-  .header-links a {
-    display: inline-block;
-    white-space: pre-line;
-    text-align: left;
+  #headerLinks br {
+    display: inline;
   }
 }
 
