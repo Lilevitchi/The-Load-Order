@@ -136,69 +136,6 @@ a:hover {
 }
 
 /* =====================================================
-   BOUTONS & INPUTS
-===================================================== */
-input,
-button,
-textarea {
-  font-family: inherit;
-  color: var(--text-primary);
-  background-color: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.09);
-  border-radius: var(--radius-md);
-  padding: var(--space-sm) var(--space-md);
-  transition: background var(--transition),
-              border-color var(--transition),
-              color var(--transition);
-}
-
-input:hover,
-button:hover {
-  background-color: rgba(255,255,255,0.09);
-}
-
-input:active,
-button:active {
-  background-color: rgba(255,255,255,0.03);
-  border-color: rgba(255,255,255,0.07);
-}
-
-button.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-textarea {
-  resize: none;
-}
-
-/* =====================================================
-   LAYOUT STRUCTURE
-===================================================== */
-.container {
-  display: flex;
-  min-height: 100vh;
-}
-
-.content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  max-width: var(--content-max-width);
-  width: 100%;
-  margin: 70px auto 0;
-  padding: 2rem;
-}
-
-footer {
-  text-align: center;
-  padding: var(--space-sm);
-  margin-top: var(--space-lg);
-  background-color: rgba(255,255,255,0.05);
-  color: var(--text-muted);
-}
-
-/* =====================================================
    UTILITAIRES
 ===================================================== */
 div {
@@ -209,38 +146,6 @@ div {
   background: #1a1d23;
   color: var(--text-primary);
   font-family: arial, helvetica, sans-serif;
-}
-
-.flex {
-  display: flex;
-}
-
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mirror {
-  transform: rotate(180deg);
-}
-
-.width-90 { max-width: 90%; }
-.width-70 { max-width: 70%; }
-.width-60 { max-width: 60%; }
-.width-40 { max-width: 40%; }
-
-.selected {
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.12);
-}
-
-.section {
-  opacity: 0;
-  transition: opacity 1s ease;
-}
-
-.section.fade-in {
-  opacity: 1;
 }
 
 /* ============================================================
@@ -271,26 +176,6 @@ a:active,
 /* =====================================================
    ANIMATIONS
 ===================================================== */
-@keyframes rotate {
-  50% {
-    transform: translateY(-6px) rotateZ(180deg);
-  }
-  100% {
-    transform: translateY(0) rotateZ(360deg);
-  }
-}
-
-@keyframes slide-down {
-  from { max-height: 0; }
-  to { max-height: 5000px; }
-}
-
-@keyframes slide-up {
-  from { max-height: 1000px; }
-  to { max-height: 0; }
-}
-
-
 @keyframes fastFade {
   from { opacity: 0; }
   to { opacity: 1; }
