@@ -252,7 +252,8 @@ a,
 .btn-secondary,
 .game-card,
 .menu-toggle,
-.menu-link {
+.menu-link
+.header-menu {
   cursor: var(--cursor-default) !important;
 }
 
@@ -262,7 +263,8 @@ a:active,
 .btn-secondary:active,
 .game-card:active,
 .menu-toggle:active,
-.menu-link:active {
+.menu-link:active
+.header-menu:active {
   cursor: var(--cursor-click) !important;
 }
 
