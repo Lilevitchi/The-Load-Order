@@ -23,14 +23,6 @@
   }
 }
 
-@media (min-width: 1200px) {
-  .header-links,
-  .header-title,
-  .header-menu {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 900px) {
   #title br {
     display: none;
