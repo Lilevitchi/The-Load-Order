@@ -22,6 +22,11 @@
     overflow-y: hidden;
     transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
   }
+
+  .header-links {
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+  }
 }
 
 @media (min-width: 900px) {
