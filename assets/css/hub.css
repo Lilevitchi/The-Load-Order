@@ -261,9 +261,3 @@ body {
 .game-card.active:hover {
   transform: translateY(-1.25rem) scale(1.02) translateZ(0);
 }
-
-
-
-.header {
-  box-shadow: 0 0.375rem 0.75rem 0.125rem rgba(0, 0, 0, 0.5) !important;
-}
