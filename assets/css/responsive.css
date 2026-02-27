@@ -2,6 +2,10 @@
   .header-index {
     display: none;
   }
+
+  #headerLinks a {
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -21,6 +25,12 @@
     padding-top: 0;
     overflow-y: hidden;
     transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
+  }
+
+  #headerLinks a {
+    display: inline-block;
+    white-space: normal;
+    text-align: left;
   }
 }
 
