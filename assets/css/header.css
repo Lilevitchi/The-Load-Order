@@ -16,7 +16,7 @@
 .header-title {
   display: flex;
   align-items: center;
-  padding-right: 4rem;
+  white-space: nowrap;
 }
 
 .header-title a {
