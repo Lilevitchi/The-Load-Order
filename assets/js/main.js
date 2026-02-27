@@ -49,6 +49,8 @@ function initBurgerMenu() {
         overlay.classList.add("active");
         toggle.classList.add("active");
         document.body.classList.add("menu-open");
+       toggle.setAttribute("aria-expanded", "true");
+       menu.setAttribute("aria-hidden", "false");
     }
 
     function closeMenu() {
@@ -56,6 +58,8 @@ function initBurgerMenu() {
         overlay.classList.remove("active");
         toggle.classList.remove("active");
         document.body.classList.remove("menu-open");
+       toggle.setAttribute("aria-expanded", "false");
+       menu.setAttribute("aria-hidden", "true");
     }
 
     function toggleMenu(e) {
