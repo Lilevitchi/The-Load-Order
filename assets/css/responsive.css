@@ -1,11 +1,56 @@
+@media (min-width: 1200px) {
+  .header-index {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .title-container h1 {
+    font-size: 1em;
+  }
+
+  .tip-bubble {
+    display: none !important;
+  }
+  
+  .button-container {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: -3rem;
+   }
+  
+  .button-wrapper {
+    margin-bottom: 1rem;
+  }
+  
+  .assistant-img {
+    height: 16.75rem;
+  }
+  
+  .main-section .btn-primary,
+  .main-section .btn-secondary {
+    width: 16.25rem;
+    height: 3.625rem;
+    font-size: 1.4rem;
+  }
+
+  .navigation-arrow .arrow-text {
+    display: none;
+   }
+  
+  h1,
+  h2 {
+    line-height: 1.2em;
+  }
+
+   .content {
+      padding: 1rem;
+   }
+}
+
 /* =====================================================
    RESPONSIVE
 ===================================================== */
-@media (max-width: 900px) {
-  .content {
-    padding: 1rem;
-  }
-}
 
 @media (max-width: 700px) {
   .width-90 { max-width: 100%; }
