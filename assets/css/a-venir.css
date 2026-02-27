@@ -24,6 +24,23 @@ footer {
   color: var(--text-muted);
 }
 
+.blur {
+  backdrop-filter: saturate(100%) blur(0.5rem);
+  -webkit-backdrop-filter: saturate(100%) blur(0.5rem);
+  transition: backdrop-filter 0.5s ease-in-out, -webkit-backdrop-filter 0.5s ease-in-out;
+  color: var(--text-primary);
+}
+
+.blur:hover {
+  backdrop-filter: saturate(120%) blur(1rem);
+  -webkit-backdrop-filter: saturate(120%) blur(1rem);
+}
+
+.blur h2 {
+  transition: text-shadow 0.5s ease-in-out;
+  text-shadow: 0.125rem 0.125rem 0.625rem rgba(0,0,0,0.7);
+}
+
 /* =====================================================
    UTILITAIRES
 ===================================================== */
