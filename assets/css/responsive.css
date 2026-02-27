@@ -23,13 +23,10 @@
     transition: all 187ms Cubic-Bezier(0, 0, 0, 1);
   }
 
-  .header-links {
-    flex-wrap: wrap;
-    width: 400px;
-  }
-
   .header-links a {
-    flex: 0 0 50%;
+    display: inline-block;
+    white-space: pre-line;
+    text-align: left;
   }
 }
 
