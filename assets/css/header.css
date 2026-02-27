@@ -63,7 +63,7 @@
 .header-menu {
   background-color: var(--bg-surface);
   border: none;
-  padding-right: 1rem;
+  margin-right: 1rem;
 }
 
 .header-menu.active {
