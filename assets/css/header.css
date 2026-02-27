@@ -20,6 +20,12 @@
   align-items: center;
 }
 
+.header-title a {
+  font-size: 2rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
 .header-title span {
   font-size: 2rem;
   color: var(--accent);
@@ -30,17 +36,6 @@
   padding: 0.5rem 0.625rem 0.5rem 0;
   height: 5rem;
 }
-
-
-
-.header-title a {
-  font-size: 2rem;
-  color: var(--accent);
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-
 
 .header-links {
   display: flex;
