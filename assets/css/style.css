@@ -253,7 +253,8 @@ a,
 .game-card,
 .menu-toggle,
 .menu-link
-.header-menu {
+.header-menu
+.header-menu svg {
   cursor: var(--cursor-default) !important;
 }
 
@@ -264,7 +265,8 @@ a:active,
 .game-card:active,
 .menu-toggle:active,
 .menu-link:active
-.header-menu:active {
+.header-menu:active
+.header-menu svg:active {
   cursor: var(--cursor-click) !important;
 }
 
