@@ -22,8 +22,7 @@
 
 .header-title img {
   padding: 0.5rem 0.625rem 0.5rem 0;
-  height: 60px;
-  transition: transform 187ms ease;
+  height: 5rem;
 }
 
 .header-title a {
