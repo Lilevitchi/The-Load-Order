@@ -19,11 +19,13 @@ body {
   color: var(--text-primary);
   backdrop-filter: saturate(100%) blur(0.5rem);
   -webkit-backdrop-filter: saturate(100%) blur(0.5rem);
-  transition: backdrop-filter 0.5s linear, -webkit-backdrop-filter 0.5s linear;
+  transition:
+    backdrop-filter 0.5s linear,
+    -webkit-backdrop-filter 0.5s linear;
   animation: slideUpSync 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
   user-select: none;
   font-size: 2rem;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .title-container {
@@ -46,8 +48,8 @@ body {
   letter-spacing: 0.05rem;
   padding: 1.5rem;
   text-shadow:
-    0 0 1.25rem rgba(0,0,0,1),
-    0 0 0.625rem rgba(255,255,255,0.2);
+    0 0 1.25rem rgba(0, 0, 0, 1),
+    0 0 0.625rem rgba(255, 255, 255, 0.2);
   animation: fastFade 0.8s ease-in-out 0.6s both;
   z-index: 3;
 }
@@ -66,7 +68,7 @@ body {
 .assistant-img {
   display: block;
   height: 18.75rem;
-  width: auto; 
+  width: auto;
   pointer-events: none;
 }
 
@@ -76,7 +78,7 @@ body {
 .tip-bubble {
   position: absolute;
   bottom: 100%;
-  left: 50%; 
+  left: 50%;
   transform: translate(-50%, -1rem);
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(0.625rem);
@@ -92,7 +94,7 @@ body {
 }
 
 .tip-bubble::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 100%;
   left: 10%;
@@ -140,23 +142,23 @@ body {
 
 .btn-primary {
   background: var(--btn-dark-bg);
-  border: 0.125rem solid rgba(255,87,34,0.5);
+  border: 0.125rem solid rgba(255, 87, 34, 0.5);
 }
 
 .btn-primary:hover {
   border-color: var(--accent);
-  box-shadow: 0 0 1.5625rem 0.125rem rgba(255,87,34,0.7);
+  box-shadow: 0 0 1.5625rem 0.125rem rgba(255, 87, 34, 0.7);
   transform: scale(1.03);
 }
 
 .btn-secondary {
   background: var(--btn-red-bg);
-  border: 0.125rem solid rgba(255,0,0,0.5);
+  border: 0.125rem solid rgba(255, 0, 0, 0.5);
 }
 
 .btn-secondary:hover {
   border-color: #ff0000;
-  box-shadow: 0 0 1.5625rem 0.125rem rgba(255,0,0,0.7);
+  box-shadow: 0 0 1.5625rem 0.125rem rgba(255, 0, 0, 0.7);
   transform: scale(1.03);
 }
 
@@ -164,25 +166,25 @@ body {
    GAME GRID
 =========================== */
 .games-section {
-  height: 30vh;  
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  user-select: none;  
+  user-select: none;
   border-top: 0.0625rem solid var(--accent);
   backdrop-filter: blur(1.25rem);
-  background: rgba(0,0,0,0.7);
-  box-shadow: 0 -0.625rem 2.5rem rgba(0,0,0,0.6) inset;  
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 -0.625rem 2.5rem rgba(0, 0, 0, 0.6) inset;
   overflow-y: auto;
 }
 
 .games-grid {
-   display: grid;
-   grid-template-columns: repeat(5, 12.5rem);
-   gap: var(--space-md);   
-   max-width: 100%;
-   width: calc(5 * 12.5rem + 4 * var(--space-md));
-   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 12.5rem);
+  gap: var(--space-md);
+  max-width: 100%;
+  width: calc(5 * 12.5rem + 4 * var(--space-md));
+  margin: 0 auto;
 }
 
 /* ===========================
@@ -211,7 +213,7 @@ body {
 
 .game-card:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 1.25rem rgba(255,87,34,0.6);
+  box-shadow: 0 0 1.25rem rgba(255, 87, 34, 0.6);
   border-color: var(--accent);
 }
 
@@ -220,7 +222,7 @@ body {
 =========================== */
 .game-card h2 {
   position: absolute;
-  inset: 0;  
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,9 +230,9 @@ body {
   color: var(--text-primary);
   font-size: 1.5rem;
   font-weight: 900;
-  margin: 0;   
-  text-shadow: 0.125rem 0.125rem 0.625rem rgba(0,0,0,1);
-  background: rgba(0,0,0,0.3);
+  margin: 0;
+  text-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* ===========================
@@ -240,7 +242,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
 }
 
 /* ===========================
@@ -248,7 +250,7 @@ body {
 =========================== */
 .game-card.active {
   transform: translateY(-1.25rem) translateZ(0);
-  box-shadow: 0 0.625rem 1.875rem rgba(255,87,34,0.4);
+  box-shadow: 0 0.625rem 1.875rem rgba(255, 87, 34, 0.4);
   border-color: #ffffff;
   color: var(--text-primary);
   z-index: 10;
@@ -264,5 +266,5 @@ body {
 
 #index-buttons {
   visibility: hidden;
-  pointer-events: none; 
+  pointer-events: none;
 }

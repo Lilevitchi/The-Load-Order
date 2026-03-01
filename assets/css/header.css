@@ -90,8 +90,8 @@
   position: fixed;
   top: var(--header-height);
   left: 0;
-  width: 20rem; 
-  max-width: 90%; 
+  width: 20rem;
+  max-width: 90%;
   background: var(--bg-surface);
   border: 0.125rem solid var(--accent);
   display: flex;
@@ -114,7 +114,7 @@
 .menu-items .menu-link {
   padding: 1rem;
   color: var(--text-primary);
-  border-bottom: 0.0625rem solid rgba(255,255,255,0.1);
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.1);
 }
 
 .menu-items .menu-link.active {
@@ -134,7 +134,7 @@
 .menu-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(0.5rem);
   -webkit-backdrop-filter: blur(0.5rem);
   opacity: 0;
