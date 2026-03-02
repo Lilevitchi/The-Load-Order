@@ -6,7 +6,6 @@
  */
 function cssToPixels(value, context = document.documentElement) {
     if (typeof value === "number") {
-        // on considère que c'est un rem
         const base = parseFloat(getComputedStyle(document.documentElement).fontSize);
         return value * base;
     }
@@ -26,15 +25,13 @@ function cssToPixels(value, context = document.documentElement) {
     return 0;
 }
 
-// Exemple pour ton popup.js
 function openPopup(thisObj, $target) {
     const rect = thisObj.getBoundingClientRect();
     const popup = $target;
 
     const isVisible = popup.classList.contains('show');
     if (!isVisible) {
-        // Utiliser rem directement pour plus de cohérence avec ton CSS
-        const offset = cssToPixels('1rem'); // <-- ici 1rem, correspond à ton transform CSS
+        const offset = cssToPixels('1rem');
         popup.style.top = `${rect.top - offset}px`;
         popup.style.left = `${rect.right}px`;
         popup.style.display = 'block';
