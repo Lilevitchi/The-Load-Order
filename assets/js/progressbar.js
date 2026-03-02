@@ -2,14 +2,17 @@
    GLOBAL SCROLL PROGRESS BAR
 ===================================================== */
 (function () {
-  const root = document.documentElement;
+  const progressBar = document.querySelector(".progress-bar");
+  if (!progressBar) return;
+
   let ticking = false;
 
   const updateProgressBar = () => {
     const winScroll = window.pageYOffset || document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
-    root.style.setProperty("--scroll-progress", `${scrolled}%`);
+
+    progressBar.style.width = scrolled + "%";
   };
 
   window.addEventListener("scroll", () => {
