@@ -1,0 +1,21 @@
+strong {
+  color: var(--accent);
+}
+
+body {
+  background-color: var(--bg-page) !important;
+}
+
+.sidebar,
+.header,
+.popup {
+  background: var(--bg-surface) !important;
+}
+
+.sidebar .active::before {
+  background-color: #00ea3c !important;
+}
+
+textarea {
+  border-color: #00ea3c !important;
+}
