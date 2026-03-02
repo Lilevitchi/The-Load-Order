@@ -4,12 +4,6 @@
   }
 }
 
-@media (max-height: 850px) {
-  header {
-    display: block !important;
-  }
-}
-
 @media (max-width: 1200px) {
   .games-section {
     overflow-y: hidden;
@@ -128,5 +122,31 @@
 
   textarea {
     max-width: 95%;
+  }
+}
+
+@media (max-height: 850px) {
+  header {
+    display: block !important;
+  }
+  
+  .games-section {
+    overflow-y: hidden !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+    border-top: 0 !important;
+    box-shadow: none !important;
+    transform: translateY(100%) !important;
+    height: 0 !important;
+  }
+
+  .main-section {
+    height: 100vh !important;
+    padding-top: 0 !important;
+    overflow-y: hidden !important;
+  }
+
+  .tip-bubble {
+    display: none !important;
   }
 }
