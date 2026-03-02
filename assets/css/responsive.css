@@ -126,7 +126,7 @@
 }
 
 @media (max-height: 850px) {
-  header {
+  .header-index {
     display: block !important;
   }
   
