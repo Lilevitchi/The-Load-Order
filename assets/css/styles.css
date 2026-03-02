@@ -176,6 +176,36 @@ a:active,
   cursor: var(--cursor-click) !important;
 }
 
+li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  margin-left: var(--sidebar-width);
+  margin-right: calc(var(--sidebar-width) + var(--scrollbar-width));
+  width: 80%;
+  padding: 2em;
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.0512);
+}
+
 /* =====================================================
    ANIMATIONS
 ===================================================== */
