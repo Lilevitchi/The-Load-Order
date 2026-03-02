@@ -295,6 +295,11 @@ body {
   .tip-bubble {
     display: none !important;
   }
+
+    .title-container h1 {
+    font-size: 1em;
+  }
+  
   .button-container {
     flex-direction: column;
     gap: 0;
