@@ -33,7 +33,8 @@ function openPopup(thisObj, $target) {
 
     const isVisible = popup.classList.contains('show');
     if (!isVisible) {
-        const offset = cssToPixels('2em', thisObj); // offset peut être rem ou em
+        // Utiliser rem directement pour plus de cohérence avec ton CSS
+        const offset = cssToPixels('1rem'); // <-- ici 1rem, correspond à ton transform CSS
         popup.style.top = `${rect.top - offset}px`;
         popup.style.left = `${rect.right}px`;
         popup.style.display = 'block';
