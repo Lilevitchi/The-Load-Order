@@ -77,6 +77,10 @@
   color: var(--accent);
 }
 
+#menuToggle:hover {
+  transform: scale3d(1.05, 1.05, 1.05);
+}
+
 #menuToggle.active svg {
   transform: rotate(90deg) scale(1.05);
 }
