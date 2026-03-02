@@ -1,39 +1,6 @@
-
-
-
-
 @media (max-width: 900px) {
   .content {
     padding: 1rem;
-  }
-
-  .title-container h1 {
-    font-size: 1em;
-  }
-
-  .tip-bubble {
-    display: none !important;
-  }
-
-  .button-container {
-    flex-direction: column;
-    gap: 0;
-    margin-bottom: -3rem;
-  }
-
-  .button-wrapper {
-    margin-bottom: 1em;
-  }
-
-  .assistant-img {
-    height: 16.75rem;
-  }
-
-  .main-section .btn-primary,
-  .main-section .btn-secondary {
-    width: 16.25rem;
-    height: 3.625rem;
-    font-size: 1.4rem;
   }
 
   .navigation-arrow .arrow-text {
