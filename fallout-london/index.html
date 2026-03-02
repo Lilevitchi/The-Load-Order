@@ -26,28 +26,37 @@
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
     <meta name="darkreader-lock">
 
-  <body class="theme">
-    <style>
-      body {
-        background-image: url("../assets/img/bg-london.webp") !important;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-      }
-    </style>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/responsive.js"></script>
 
-    <div class="header-index" style="overflow:auto">
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/hub.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+  </head>
+
+<body class="theme">
+  <style>
+    body {
+      background-image: url('../assets/img/bg-london.webp') !important;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+
+  <div class="header-index" style="overflow:auto">
       <div class="header">
         <button class="header-menu" id="menuToggle">
           <svg width="24" height="24" viewBox="0 0 24 24">
-            <rect y="4" width="24" height="2" fill="currentColor" rx="1.0" />
-            <rect y="11" width="24" height="2" fill="currentColor" rx="1.0" />
-            <rect y="18" width="24" height="2" fill="currentColor" rx="1.0" />
+            <rect y="4" width="24" height="2" fill="currentColor" rx="1.0"/>
+            <rect y="11" width="24" height="2" fill="currentColor" rx="1.0"/>
+            <rect y="18" width="24" height="2" fill="currentColor" rx="1.0"/>
           </svg>
         </button>
         <div class="header-title">
-          <img src="../assets/img/logo.webp" alt="Logo" id="logo" />
+          <img src="../assets/img/logo.webp" alt="Logo" id="logo">
           <a href="../index.html" id="headerTitle">Fallout London</a>
         </div>
         <nav class="header-links" id="headerLinks">
@@ -64,86 +73,54 @@
         <a href="../ttw/index.html" class="menu-link">Tale of Two Wastelands</a>
         <a href="../cyberpunk77/index.html" class="menu-link">Cyberpunk 2077</a>
       </nav>
-      <div id="menuOverlay" class="menu-overlay"></div>
-    </div>
-
-    <div id="mainContent" class="main-section">
-      <div class="title-container">
-        <div class="assistant-wrapper">
-          <img
-            src="../assets/img/lile-bot-london.webp"
-            alt="Assistant"
-            class="assistant-img"
-          />
-          <div class="tip-bubble">
-            <p id="tipText">Chargement d'une astuce...</p>
-          </div>
-        </div>
-        <h1 id="title">Bienvenue dans <br />Londres!</h1>
-      </div>
-      <div class="button-container">
-        <div class="button-wrapper">
-          <a class="btn-primary" href="./intro.html"
-            ><strong>Guide Écrit</strong></a
-          >
-        </div>
-        <div class="button-wrapper">
-          <a
-            class="btn-secondary"
-            href="#"
-            target="_blank"
-            rel="nofollow noopener noreferrer"
-            ><strong>Guide Vidéo</strong></a
-          >
+    <div id="menuOverlay" class="menu-overlay"></div>
+  </div>
+  
+  <div id="mainContent" class="main-section">
+    <div class="title-container">
+      <div class="assistant-wrapper">
+        <img src="../assets/img/lile-bot-london.webp" alt="Assistant" class="assistant-img">
+        <div class="tip-bubble">
+          <p id="tipText">Chargement d'une astuce...</p>
         </div>
       </div>
+      <h1 id="title">Bienvenue dans <br />Londres!</h1>
     </div>
-
-    <!-- Sélection des jeux -->
-    <div class="games-section">
-      <div class="games-grid">
-        <a href="../fallout4/index.html" class="game-card">
-          <div
-            class="game-card-bg"
-            style="background-image: url(&quot;../assets/img/bg-fo4.webp&quot;)"
-          ></div>
-          <h2>Fallout 4</h2>
-        </a>
-        <span class="game-card active">
-          <div
-            class="game-card-bg"
-            style="
-              background-image: url(&quot;../assets/img/bg-london.webp&quot;);
-            "
-          ></div>
-          <h2>Fallout London</h2>
-        </span>
-        <a href="../fnv/index.html" class="game-card">
-          <div
-            class="game-card-bg"
-            style="
-              background-image: url(&quot;../assets/img/bg-newvegas.webp&quot;);
-            "
-          ></div>
-          <h2>New Vegas</h2>
-        </a>
-        <a href="../ttw/index.html" class="game-card">
-          <div
-            class="game-card-bg"
-            style="background-image: url(&quot;../assets/img/bg-ttw.webp&quot;)"
-          ></div>
-          <h2>TTW</h2>
-        </a>
-        <a href="../cyberpunk77/index.html" class="game-card">
-          <div
-            class="game-card-bg"
-            style="
-              background-image: url(&quot;../assets/img/bg-cyberpunk.webp&quot;);
-            "
-          ></div>
-          <h2>Cyberpunk</h2>
-        </a>
+    <div class="button-container">
+      <div class="button-wrapper">
+        <a class="btn-primary" href="./intro.html"><strong>Guide Écrit</strong></a>
+      </div>
+      <div class="button-wrapper">
+        <a class="btn-secondary" href="https://youtu.be/vG8aO6B16Pk?si=vDljF7D5kg5Ai38h" target="_blank" rel="nofollow noopener noreferrer"><strong>Guide Vidéo</strong></a>
       </div>
     </div>
-  </body>
+  </div>
+  
+  <!-- Sélection des jeux -->
+  <div class="games-section">
+    <div class="games-grid">
+      <a href="../fallout4/index.html" class="game-card">
+        <div class="game-card-bg" style="background-image:url('../assets/img/bg-fo4.webp')"></div>
+        <h2>Fallout 4</h2>
+      </a>
+      <span class="game-card active">
+        <div class="game-card-bg" style="background-image:url('../assets/img/bg-london.webp')"></div>
+        <h2>Fallout London</h2>
+      </span>
+      <a href="../fnv/index.html" class="game-card">
+        <div class="game-card-bg" style="background-image:url('../assets/img/bg-newvegas.webp')"></div>
+        <h2>New Vegas</h2>
+      </a>
+      <a href="../ttw/index.html" class="game-card">
+        <div class="game-card-bg" style="background-image:url('../assets/img/bg-ttw.webp')"></div>
+        <h2>TTW</h2>
+      </a>
+      <a href="../cyberpunk77/index.html" class="game-card">
+        <div class="game-card-bg" style="background-image:url('../assets/img/bg-cyberpunk.webp')"></div>
+        <h2>Cyberpunk</h2>
+      </a>
+    </div>
+  </div>
+</body>
+  
 </html>
