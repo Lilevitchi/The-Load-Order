@@ -18,8 +18,8 @@
   /* ===== TAILLES GLOBALES ===== */
   --header-height: 4.5rem;
   --footer-height: 1.875rem;
-  --sidebar-width-primary: 13.5rem;
-  --sidebar-width-secondary: 14.125rem;
+  --sidebar-width: 13.5rem;
+  --scrollbar-width: 0.625em;
   --sidebar-gap: 0.625rem;
   --footer-visible-height: 0rem; /* piloté par JS */
 
