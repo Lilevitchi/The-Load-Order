@@ -163,17 +163,6 @@ body.menu-open {
   }
 }
 
-@media (min-width: 901px) {
-  #title br {
-    display: none;
-  }
-
-  #title::after {
-    content: " ";
-    display: inline;
-  }
-}
-
 @media (min-width: 701px) {
   .header-menu {
     display: none;
