@@ -25,22 +25,20 @@ function cssToPixels(value, context = document.documentElement) {
     return 0;
 }
 
-function openPopup(thisObj, $target) {
-    const rect = thisObj.getBoundingClientRect();
-    const popup = $target;
+// ==============================
+// EXEMPLES D'UTILISATION
+// ==============================
 
-    const isVisible = popup.classList.contains('show');
-    if (!isVisible) {
-        const offset = cssToPixels('1rem');
-        popup.style.top = `${rect.top - offset}px`;
-        popup.style.left = `${rect.right}px`;
-        popup.style.display = 'block';
-        requestAnimationFrame(() => popup.classList.add('show'));
-    } else {
-        popup.classList.remove('show');
-        setTimeout(() => (popup.style.display = 'none'), 200);
-    }
+// Convertir le padding d'un header en pixels
+const header = document.querySelector('.header');
+const headerPaddingPx = cssToPixels(getComputedStyle(header).paddingTop);
+console.log('Header padding-top en px:', headerPaddingPx);
 
-    lastPopupWindow = $target;
-    lastPopupButton = thisObj;
-}
+// Convertir une valeur fixe en rem
+const offsetPx = cssToPixels('1.5rem');
+console.log('1.5rem en px:', offsetPx);
+
+// Convertir une valeur en em par rapport à un élément spécifique
+const title = document.querySelector('h1');
+const titleLineHeightPx = cssToPixels(getComputedStyle(title).lineHeight, title);
+console.log('Line-height h1 en px:', titleLineHeightPx);
