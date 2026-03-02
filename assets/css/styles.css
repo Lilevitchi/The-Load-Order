@@ -176,6 +176,10 @@ a:active,
   cursor: var(--cursor-click) !important;
 }
 
+/* =====================================================
+   LAYOUT STRUCTURE
+===================================================== */
+
 li {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -194,16 +198,17 @@ li {
   margin-left: var(--sidebar-width);
   margin-right: calc(var(--sidebar-width) + var(--scrollbar-width));
   width: 80%;
-  padding: 2em;
+  padding: 2rem;
 }
 
 footer {
   text-align: center;
-  padding: 5px;
+  padding: var(--space-sm);
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: var(--space-lg);
   outline: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.0512);
+  background-color: rgba(255,255,255,0.05);
+  color: var(--text-muted);
 }
 
 /* =====================================================
