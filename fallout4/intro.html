@@ -14,7 +14,7 @@
       Nexus Mods, NexusMods, Vortex, Mod Organizer 2, MO2, Installer, Mod Manager,
       Performance, Stabilité, Optimisation, Fix, Fixes, FPS, Fast, Easy, Beginner" />
 
-    <meta name="description" content="Guide complet de modding pour Fallout 4: installation, stabilité, performance et ressources." />
+    <meta name="description" content="Introduction du guide avec objectifs, prérequis et conseils pour votre jeu." />
     <meta http-equiv="content-language" content="fr" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="og:site_name" content="The Load Order" />
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://theloadorder.example.com/" /> <!-- mettre URL finale -->
     <meta property="og:image" content="../assets/img/og-card.webp" />
-    <meta property="og:description" content="Guide Fallout 4: installation, stabilité, performance et ressources." />
+    <meta property="og:description" content="Introduction du guide avec objectifs, prérequis et conseils pour votre jeu." />
 
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#292c35">
     <meta name="darkreader-lock">
@@ -40,267 +40,281 @@
     <link rel="stylesheet" href="../assets/css/responsive.css" />
 </head>
 
-
 <body class="theme">
     <div class="progress-container">
         <div class="progress-bar"></div>
     </div>
-
-    <div class="container">
-        <div class="header">
-            <div class="headerMenu" onclick="toggleNav()">
-                <img src="./img/UI/Navigation.svg" id="navButton">
-            </div>
-            <div class="headerTitle">
-                <img src="./img/Coco/Head Logo.webp" alt="Logo" id="logo">
-                <a href="./index.html" id="headerTitle">The Midnight Ride</a>
-            </div>
-            <div class="guideLinks" id="headerLinks">
-                <a href="https://thebestoftimes.moddinglinked.com" target="_blank" rel="nofollow">Tale of Two Wastelands</a>
-                <a href="https://vivanewvegas.moddinglinked.com" target="_blank" rel="nofollow">Fallout: New Vegas</a>
-                <a href="https://dragonbornsfate.moddinglinked.com" target="_blank" rel="nofollow">Skyrim SE</a>
-            </div>
-        </div>
-
-        <div class="sidebar left-sidebar">
-            <p class="pageLinks">
-                <a href="./index.html" title="Home">
-                    Home
-                </a>
-
-                <a href="./intro.html" title="Introduction">
-                    Introduction
-                </a>
-
-                <a href="./setup.html" title="Setup">
-                    Setup
-                </a>
-
-                <a href="./mo2.html" title="MO2">
-                    Mod Organizer 2
-                </a>
-
-                <a href="./utilities.html" title="Utilities">
-                    Utilities
-                </a>
-
-                <a href="./bugfix.html" title="Bug Fixes">
-                    Bug Fixes
-                </a>
-
-                <a href="./basefinish.html" title="Base Finish">
-                    Base Finish
-                </a>
-            </p>
-            <hr>
-            <p class="pageLinks">
-                <a href="./hud.html" title="User Interface">
-                    User Interface
-                </a>
-                <a href="./tweaks.html" title="Tweaks">
-                    Tweaks
-                </a>
-                <a href="./gameplay.html" title="Gameplay">
-                    Gameplay
-                </a>
-                <a href="./content.html" title="Content">
-                    Content
-                </a>
-                <a href="./visuals.html" title="Visuals">
-                    Visuals
-                </a>
-                <a href="./finish.html" title="Extended Finish">
-                    Extended Finish
-                </a>
-            </p>
-            <hr>
-            <p>
-                <a href="./changelog.html" title="Changelog">
-                    Changelog
-                </a>
-
-                <a href="./resources.html" title="Resources">
-                    Resources
-                </a>
-
-                <a href="./esl.html" title="Light Plugins" class="sublink">
-                    Light Plugins
-                </a>
-
-                <a href="./lod.html" title="LOD Guide" class="sublink">
-                    LOD Guide
-                </a>
-
-                <a href="./faq.html" title="FAQ">
-                    FAQ
-                </a>
-
-                <a href="./safe-modding.html" title="Safe Modding">
-                    Safe Modding
-                </a>
-
-                <a href="./wabbajack.html" title="Wabbajack">
-                    Wabbajack
-                </a>
-            </p>
-            <p class="sidebar-padder"></p>
-            <hr>
-            <p class="sidebar-bottom">
-                <a href="https://discord.gg/S99Ary5eba" title="Discord">
-                    Discord
-                </a>
-                <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
-                    Donate
-                </a>
-                <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
-                    GitHub
-                </a>
-            </p>
-        </div>
-
-        <div class="card popup" id="donation">
-            <ul>
-                <li>
-                    <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
-                </li>
-                <li>
-                    <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="content">
-
-            <span id="Introduction" class="section">
-
-                <div class="card-red center important-notice">
-                    <p>
-                        <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
-                    <div>
-                        <p>
-                            <b>IMPORTANT</b>:
-                            <br>
-                            Everything in this guide is written down for a reason! It is vital to read <b>everything!</b>
-                            <br>
-                            You can <b>NOT</b> skip any paragraphs/instructions and expect your game to function as it should.
-                        </p>
-                    </div>
-                    </p>
-                </div>
-
-                <h2 onclick="location.href='#Introduction'">Introduction</h2>
-                <div class="card flex logo-container" id="Overview">
-                    <div>
-                        <h3>Overview</h3>
-                        <p>
-                            The Midnight Ride is a modding guide for Fallout 4 that will carefully walk you through how to install all the mods you will need for a perfectly stable, smooth and enjoyable experience. <br>
-                            <br>
-                            The guide is highly accessible for everyone, no matter your modding experience.
-                            It is still incredibly important that you read all the instructions very carefully, even if you believe you are experienced enough to skip them. There are many small instructions that are vital for your game to function, and could be easily missed if you aren't careful.
-                            Although you don't need any modding experience to use this guide, it is expected for you to be relatively experienced with operating a computer in general.
-                        </p>
-                    </div>
-
-                    <div>
-                        <img src="img/Coco/Full.webp" alt="Logo of Coco - a dog mascot of ModdingLinked">
-                    </div>
-
-                </div>
-
-                <div class="card" id="Features">
-                    <p>
-                    <h3 onclick="location.href='#Features'">Features</h3>
-                    <ul>
-                        <li>
-                            <b>Stability</b>: The guide includes all essential stability enhancements and no placebo/dangerous mods.
-                        </li>
-                        <li>
-                            <b>Performance</b>: Every tool, setting and mod in the guide has been carefully selected and play-tested to ensure maximum possible performance. With the recommended specs listed below, you can expect ~60 FPS in the heavier areas of Boston.
-                        </li>
-                        <li>
-                            <b>Customizability</b>: The guide is split into <b>2 sections</b>; all the mods required for the game to work and perform better are contained in the first section. The mods that can be considered subjective and that alter or add game content are in the <strong>TMR Extended</strong> section, which is fully modular.
-                        </li>
-                        <li>
-                            <b>Better Gameplay</b>: As part of the <b>TMR Extended</b> section, the guide includes many mods that greatly improve the gameplay without drastically overhauling the core experience or straying away from the game's original intent.
-                        </li>
-                    </ul>
-                    </p>
-                </div>
-                <div class="card" id="Requirements">
-                    <p>
-                    <h3 onclick="location.href='#Requirements'">Requirements</h3>
-                    <ul>
-                        <li>An <b>English</b> copy of the game with <strong>all DLCs except the HD Texture Pack</strong> (the reason is explained in the mods to avoid section: <a href="https://themidnightride.moddinglinked.com/avoid-mods.html">Mods to Avoid</a>), from <a href="https://store.steampowered.com/sub/199943/">Steam</a>.
-                            <ul>
-                                <li>Only the <strong>English version</strong> of the game is supported for maximum compatibility; translations can conflict with mods and cause issues. The Epic Games Store and Xbox Game Pass versions of the game are also unsupported, as they do not work with F4SE, which is essential for many mods.</li>
-                                <li>Only the Creation Club content that ships with the game is supported. Most of the CC content will need patching (a common exception to this are workshop additions, you can keep those), which is beyond the scope of this guide. You will have to remove them as instructed later in the guide when uninstalling the game.</li>
-                            </ul>
-                        </li>
-
-                        <div class="card-red">
-                            <p>
-                                GOG is not supported until it receives the Next-Gen update, due to it currently missing the CC content that mods such as UFO4P and Community Fixes Merged rely on. Supporting GOG in its current state would mean massively branching the guide and having less fixes for a chunk of the userbase.
-                            </p>
-                        </div>
-
-                        <div class="card-green">
-                            <p>
-                                You can buy a cheap activation key for the GOTY edition on <a href="https://www.instant-gaming.com/en/2207-buy-fallout-4-goty-edition-goty-edition-pc-game-steam/?igr=moddinglinked" target="_blank">Instant Gaming</a> (affiliate link).
-                            </p>
-                        </div>
-
-                        <li>At least 52GB of free drive space, game included (45GB if you delete all the downloads).</li>
-                        <li>Windows 10 or higher (64-bit).</li>
-
-                        <div class="card-red">
-                            <p>
-                                Windows installations deviating from the public release (e.g. <strong>customized or LTSC</strong>) are not supported by us. We can refuse to provide help in such cases.
-                                <br>
-                                This is because they don't guarantee the default functionality expected from the public release, which can cause <strong>unforeseen issues</strong>.
-                            </p>
-                        </div>
-
-                        <li>A text editor (<a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> is recommended, but the default Windows notepad will work).</li>
-                        <li>An archiving tool (<a href="https://apps.microsoft.com/store/detail/nanazip/9N8G7TSCL18R?hl=en-us&gl=us" target="_blank">NanaZip</a> is recommended).</li>
-                        <li>The latest GPU drivers (either <a href="https://www.nvidia.com/Download/index.aspx" target="_blank">Nvidia</a>, <a href="https://www.amd.com/en/support" target="_blank">AMD</a> or <a href="https://www.intel.com/content/www/us/en/search.html#q=&sort=relevancy&f:@tabfilter=[Downloads]&f:@stm_10385_en=[Graphics]" target="_blank">Intel</a>).</li>
-                        <li>A <a href="https://users.nexusmods.com/register" target="_blank">Nexus Mods</a> account (a Premium subscription will allow uncapped speeds).</li>
-                    </ul>
-                    </p>
-                </div>
-                <div class="card" id="RecommendedSpecs">
-                    <p>
-                    <h3 onclick="location.href='#RecommendedSpecs'">Recommended Specs</h3>
-                    The guide will make the game run better than vanilla, here are the recommended minimum specifications to run TMR+TMRE at <strong>60 FPS 1080p</strong> with all the recommended mods and settings:
-                    <ul>
-                        <li><b>CPU</b>: Matching or surpassing the single-thread performance of a Ryzen 5 1600.</li>
-                        <li><b>RAM</b>: 8GB or more.</li>
-                        <li><b>GPU</b>: Matching or surpassing the performance of a GTX 960 or R9 290. 4GB or more of VRAM.</li>
-                        <li><b>Storage</b>: Solid state (SSD).</li>
-                    </ul>
-                    </p>
-                </div>
-            </span>
-
-            <div class="navigationArrowContainer">
-                <a href="#" id="previous" rel="prev" class="navigationArrow">
-                    <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
-                    <span class="arrowText"></span>
-                </a>
-
-                <a href="#" id="next" rel="next" class="navigationArrow">
-                    <span class="arrowText"></span>
-                    <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
-                </a>
-            </div>
-        </div>
-
-        <div class="sidebar right-sidebar">
-            <p id="sidebarContent">
-            </p>
-        </div>
+  
+  <div class="container">
+    <div class="header">
+      <button class="header-menu" id="menuToggle" onclick="toggleNav()">
+        <svg width="24" height="24" viewBox="0 0 24 24">
+          <rect y="4" width="24" height="2" fill="currentColor" rx="1.0"/>
+          <rect y="11" width="24" height="2" fill="currentColor" rx="1.0"/>
+          <rect y="18" width="24" height="2" fill="currentColor" rx="1.0"/>
+        </svg>
+      </button>
+        
+      <div class="header-title">
+        <img src="../assets/img/logo.webp" alt="Logo" id="logo">
+        <a href="../index.html" id="headerTitle">Fallout 4</a>
+      </div>
+      <nav class="header-links" id="headerLinks">
+        <a href="../fallout-london/index.html">Fallout London</a>
+        <a href="../fnv/index.html">New Vegas</a>
+        <a href="../ttw/index.html">Tale of Two Wastelands</a>
+        <a href="../cyberpunk77/index.html">Cyberpunk</a>
+      </nav>
     </div>
+  </div>
 
-    <footer>ModdingLinked 2026</footer>
+  <div class="sidebar left-sidebar">
+    <p class="pageLinks">
+      <a href="./index.html" title="Home">
+        Home
+      </a>
+      
+      <a href="./intro.html" title="Introduction">
+        Introduction
+      </a>
+
+      <a href="./setup.html" title="Setup">
+        Setup
+      </a>
+
+      <a href="./mo2.html" title="MO2">
+        Mod Organizer 2
+      </a>
+
+      <a href="./utilities.html" title="Utilities">
+        Utilities
+      </a>
+
+      <a href="./bugfix.html" title="Bug Fixes">
+        Bug Fixes
+      </a>
+
+      <a href="./basefinish.html" title="Base Finish">
+        Base Finish
+      </a>
+    </p>
+    
+    <hr>
+    <p class="pageLinks">
+      <a href="./hud.html" title="User Interface">
+        User Interface
+      </a>
+      
+      <a href="./tweaks.html" title="Tweaks">
+        Tweaks
+      </a>
+      
+      <a href="./gameplay.html" title="Gameplay">
+        Gameplay
+      </a>
+      
+      <a href="./content.html" title="Content">
+        Content
+      </a>
+      
+      <a href="./visuals.html" title="Visuals">
+        Visuals
+      </a>
+      
+      <a href="./finish.html" title="Extended Finish">
+        Extended Finish
+      </a>
+    </p>
+    
+    <hr>
+    <p>
+      <a href="./changelog.html" title="Changelog">
+        Changelog
+      </a>
+      
+      <a href="./resources.html" title="Resources">
+        Resources
+      </a>
+
+      <a href="./esl.html" title="Light Plugins" class="sublink">
+        Light Plugins
+      </a>
+
+      <a href="./lod.html" title="LOD Guide" class="sublink">
+        LOD Guide
+      </a>
+
+      <a href="./faq.html" title="FAQ">
+        FAQ
+      </a>
+
+      <a href="./safe-modding.html" title="Safe Modding">
+        Safe Modding
+      </a>
+      
+      <a href="./wabbajack.html" title="Wabbajack">
+        Wabbajack
+      </a>    
+    </p>
+    
+    <p class="sidebar-padder"></p>
+    <hr>
+    <p class="sidebar-bottom">
+      <a href="https://discord.gg/S99Ary5eba" title="Discord">
+        Discord
+      </a>
+      <a title="Donate" class="popup-button" id="donation-button" onclick="openPopup(this, donation)">
+        Donate
+      </a>
+      <a href="https://github.com/ModdingLinked/The-Midnight-Ride" title="GitHub">
+        GitHub
+      </a>
+    </p>
+  </div>
+
+  <div class="card popup" id="donation">
+    <ul>
+      <li>
+        <a href="https://www.patreon.com/moddinglinked" target="_blank" rel="nofollow">Patreon</a>
+      </li>
+      <li>
+        <a href="https://www.paypal.me/Ungeziefi" target="_blank" rel="nofollow">PayPal</a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    
+    <span id="Introduction" class="section">
+
+      <div class="card-red center important-notice">
+        <p>
+          <img src="./img/Coco/Blockquote.webp" alt="Coco blockquote" class="cocoNerd">
+        <div>
+          <p>
+            <b>IMPORTANT</b>:
+            <br>
+            Everything in this guide is written down for a reason! It is vital to read <b>everything!</b>
+            <br>
+            You can <b>NOT</b> skip any paragraphs/instructions and expect your game to function as it should.
+          </p>
+        </div>
+      </p>
+      </div>
+
+      <h2 onclick="location.href='#Introduction'">Introduction</h2>
+      <div class="card flex logo-container" id="Overview">
+        <div>
+          <h3>Overview</h3>
+          <p>
+            The Midnight Ride is a modding guide for Fallout 4 that will carefully walk you through how to install all the mods you will need for a perfectly stable, smooth and enjoyable experience. <br>
+            <br>
+            The guide is highly accessible for everyone, no matter your modding experience.
+            It is still incredibly important that you read all the instructions very carefully, even if you believe you are experienced enough to skip them. There are many small instructions that are vital for your game to function, and could be easily missed if you aren't careful.
+            Although you don't need any modding experience to use this guide, it is expected for you to be relatively experienced with operating a computer in general.
+          </p>
+        </div>
+        
+        <div>
+          <img src="img/Coco/Full.webp" alt="Logo of Coco - a dog mascot of ModdingLinked">
+        </div>
+        
+      </div>
+      
+      <div class="card" id="Features">
+        <p>
+          <h3 onclick="location.href='#Features'">Features</h3>
+        <ul>
+          <li>
+            <b>Stability</b>: The guide includes all essential stability enhancements and no placebo/dangerous mods.
+          </li>
+          <li>
+            <b>Performance</b>: Every tool, setting and mod in the guide has been carefully selected and play-tested to ensure maximum possible performance. With the recommended specs listed below, you can expect ~60 FPS in the heavier areas of Boston.
+          </li>
+          <li>
+            <b>Customizability</b>: The guide is split into <b>2 sections</b>; all the mods required for the game to work and perform better are contained in the first section. The mods that can be considered subjective and that alter or add game content are in the <strong>TMR Extended</strong> section, which is fully modular.
+          </li>
+          <li>
+            <b>Better Gameplay</b>: As part of the <b>TMR Extended</b> section, the guide includes many mods that greatly improve the gameplay without drastically overhauling the core experience or straying away from the game's original intent.
+          </li>
+        </ul>
+      </p>
+      </div>
+      <div class="card" id="Requirements">
+        <p>
+          <h3 onclick="location.href='#Requirements'">Requirements</h3>
+        <ul>
+          <li>An <b>English</b> copy of the game with <strong>all DLCs except the HD Texture Pack</strong> (the reason is explained in the mods to avoid section: <a href="https://themidnightride.moddinglinked.com/avoid-mods.html">Mods to Avoid</a>), from <a href="https://store.steampowered.com/sub/199943/">Steam</a>.
+            <ul>
+              <li>Only the <strong>English version</strong> of the game is supported for maximum compatibility; translations can conflict with mods and cause issues. The Epic Games Store and Xbox Game Pass versions of the game are also unsupported, as they do not work with F4SE, which is essential for many mods.</li>
+              <li>Only the Creation Club content that ships with the game is supported. Most of the CC content will need patching (a common exception to this are workshop additions, you can keep those), which is beyond the scope of this guide. You will have to remove them as instructed later in the guide when uninstalling the game.</li>
+            </ul>
+          </li>
+          
+          <div class="card-red">
+            <p>
+              GOG is not supported until it receives the Next-Gen update, due to it currently missing the CC content that mods such as UFO4P and Community Fixes Merged rely on. Supporting GOG in its current state would mean massively branching the guide and having less fixes for a chunk of the userbase.
+            </p>
+          </div>
+          
+          <div class="card-green">
+            <p>
+              You can buy a cheap activation key for the GOTY edition on <a href="https://www.instant-gaming.com/en/2207-buy-fallout-4-goty-edition-goty-edition-pc-game-steam/?igr=moddinglinked" target="_blank">Instant Gaming</a> (affiliate link).
+            </p>
+          </div>
+          
+          <li>At least 52GB of free drive space, game included (45GB if you delete all the downloads).</li>
+          <li>Windows 10 or higher (64-bit).</li>
+          
+          <div class="card-red">
+            <p>
+              Windows installations deviating from the public release (e.g. <strong>customized or LTSC</strong>) are not supported by us. We can refuse to provide help in such cases.
+              <br>
+              This is because they don't guarantee the default functionality expected from the public release, which can cause <strong>unforeseen issues</strong>.
+            </p>
+          </div>
+          
+          <li>A text editor (<a href="https://notepad-plus-plus.org/" target="_blank">Notepad++</a> is recommended, but the default Windows notepad will work).</li>
+          <li>An archiving tool (<a href="https://apps.microsoft.com/store/detail/nanazip/9N8G7TSCL18R?hl=en-us&gl=us" target="_blank">NanaZip</a> is recommended).</li>
+          <li>The latest GPU drivers (either <a href="https://www.nvidia.com/Download/index.aspx" target="_blank">Nvidia</a>, <a href="https://www.amd.com/en/support" target="_blank">AMD</a> or <a href="https://www.intel.com/content/www/us/en/search.html#q=&sort=relevancy&f:@tabfilter=[Downloads]&f:@stm_10385_en=[Graphics]" target="_blank">Intel</a>).</li>
+          <li>A <a href="https://users.nexusmods.com/register" target="_blank">Nexus Mods</a> account (a Premium subscription will allow uncapped speeds).</li>
+        </ul>
+      </p>
+      </div>
+      <div class="card" id="RecommendedSpecs">
+        <p>
+          <h3 onclick="location.href='#RecommendedSpecs'">Recommended Specs</h3>
+          The guide will make the game run better than vanilla, here are the recommended minimum specifications to run TMR+TMRE at <strong>60 FPS 1080p</strong> with all the recommended mods and settings:
+        <ul>
+          <li><b>CPU</b>: Matching or surpassing the single-thread performance of a Ryzen 5 1600.</li>
+          <li><b>RAM</b>: 8GB or more.</li>
+          <li><b>GPU</b>: Matching or surpassing the performance of a GTX 960 or R9 290. 4GB or more of VRAM.</li>
+          <li><b>Storage</b>: Solid state (SSD).</li>
+        </ul>
+      </p>
+      </div>
+    </span>
+    
+    <div class="navigationArrowContainer">
+      <a href="#" id="previous" rel="prev" class="navigationArrow">
+        <img class="mirror" src="./img/UI/Arrow.svg" alt="Back Arrow">
+        <span class="arrowText"></span>
+      </a>
+      
+      <a href="#" id="next" rel="next" class="navigationArrow">
+        <span class="arrowText"></span>
+        <img src="./img/UI/Arrow.svg" alt="Forward Arrow">
+      </a>
+    </div>
+  </div>
+  
+  <div class="sidebar right-sidebar">
+    <p id="sidebarContent">
+    </p>
+  </div>
+</div>
+  
+  <footer>ModdingLinked 2026</footer>
 </body>
-
+  
 </html>
