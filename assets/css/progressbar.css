@@ -1,0 +1,18 @@
+.progress-container {
+  position: fixed;
+  border-bottom-left-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+  background-color: var(--progress-bg);
+  height: 4.7rem;
+  width: 100%;
+  z-index: 2;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: var(--accent);
+  border-bottom-left-radius: var(--radius-md);
+  border-bottom-right-radius: var(--radius-md);
+  transition: width 0.1s ease-out;
+}
