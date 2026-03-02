@@ -43,7 +43,7 @@
   }
 
   .title-container h1 {
-    font-size: 1em;
+    font-size: 1.5rem;
   }
 
   .tip-bubble {
@@ -53,7 +53,7 @@
   .button-container {
     flex-direction: column;
     gap: 0;
-    margin-bottom: -3em;
+    margin-bottom: -3rem;
   }
 
   .button-wrapper {
@@ -77,7 +77,7 @@
 
   h1,
   h2 {
-    line-height: 1.2em;
+    line-height: 2.8rem;
   }
 }
 
