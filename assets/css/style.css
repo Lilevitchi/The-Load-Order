@@ -44,8 +44,8 @@
   --transition: 0.2s ease;
 
   /* ===== CURSEURS ===== */
-  --cursor-default: url("../img/curseur.png") 7 0, pointer;
-  --cursor-click: url("../img/curseur-clic.png") 7 0, pointer;
+  --cursor-default: url("../img/curseur.webp") 7 0, pointer;
+  --cursor-click: url("../img/curseur-clic.webp") 7 0, pointer;
 }
 
 /* =====================================================
